@@ -1,0 +1,437 @@
+{
+  "home": {
+    "title": "Welcome to NextPath",
+    "description": "Your platform for informed career decisions."
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About"
+  },
+  "common": {
+    "language": "Language",
+    "back": "Back",
+    "error": "Something went wrong",
+    "cancel": "Cancel"
+  },
+  "nav": {
+    "mainMenu": "Main menu",
+    "openMenu": "Open menu",
+    "profileMenu": "Profile menu",
+    "home": "Home",
+    "favorites": "Favorites",
+    "tests": "Tests",
+    "careers": "Careers",
+    "tasks": "Tasks",
+    "sessions": "Guidance sessions",
+    "messages": "Messages",
+    "community": "Community",
+    "about": "About",
+    "studentResults": "Student Results",
+    "reports": "Reports & Analytics",
+    "resources": "Vocational resources"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or was moved.",
+    "back": "Go back home"
+  },
+  "auth": {
+    "welcomeTitle": "Welcome",
+    "tagline": "Discover the career that fits you and make decisions with confidence",
+    "logIn": "Log In",
+    "signUp": "Sign Up",
+    "backHome": "Back to the welcome page",
+    "signInTitle": "Sign In",
+    "signUpTitle": "Sign Up",
+    "emailPlaceholder": "User or e-mail",
+    "email": "E-mail",
+    "password": "Password",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "role": "Role",
+    "roles": {
+      "student": "Student",
+      "psychologist": "Psychologist"
+    },
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot your password?",
+    "forgotPasswordDetail": "Write to soporte{'@'}nextpath.com and we will help you recover it.",
+    "enter": "ENTER",
+    "noAccount": "Don't have an account?",
+    "registerLink": "Sign up",
+    "haveAccount": "Already have an account?",
+    "signInLink": "Sign in",
+    "signOut": "Sign out",
+    "errors": {
+      "required": "Enter your e-mail and password.",
+      "invalidCredentials": "Wrong e-mail or password.",
+      "signUpRequired": "Fill in every field. The password needs at least 6 characters.",
+      "emailTaken": "An account with that e-mail already exists.",
+      "server": "We could not reach the server. Check that the Fake API is running."
+    }
+  },
+  "dashboard": {
+    "greeting": "Hi, {name}!",
+    "welcome": "Welcome to your NextPath vocational guidance portal.",
+    "summary": "You have {tasks} and {sessions}.",
+    "tasksCount": "0 pending tasks | 1 pending task | {n} pending tasks",
+    "sessionsCount": "0 scheduled sessions | 1 scheduled session | {n} scheduled sessions",
+    "shortcuts": "Shortcuts",
+    "cards": {
+      "tests": "Vocational Tests",
+      "careers": "Explore Careers",
+      "sessions": "Guidance sessions",
+      "messages": "Messages",
+      "goTests": "Go to Tests",
+      "goCareers": "Go to Careers",
+      "goSessions": "Go to Sessions",
+      "goMessages": "Go to Messages"
+    },
+    "progressTitle": "My overall vocational progress",
+    "completed": "{value} % completed",
+    "testLine": "Vocational test {number} ({name})",
+    "status": {
+      "completed": "Completed",
+      "inProgress": "In progress",
+      "suggested": "Suggested"
+    },
+    "favoritesLine": "Favorite Careers Selection",
+    "favoritesDetail": "No careers saved yet | 1 career saved for comparison | {n} careers saved for comparison",
+    "nextTasks": "My upcoming tasks",
+    "noTasks": "You have no pending tasks!"
+  },
+  "tests": {
+    "title": "Vocational tests",
+    "subtitle": "Explore our assessments to discover your skills, personality and professional interests",
+    "start": "Start Test",
+    "continue": "Continue",
+    "completedOn": "Completed on {date}",
+    "inProgress": "In progress since {date}",
+    "viewResult": "View result"
+  },
+  "test": {
+    "progress": "Progress",
+    "question": "Question {number}:",
+    "placeholder": "Write your answer here...",
+    "previous": "Previous",
+    "next": "Next",
+    "finish": "Finish",
+    "analyzing": "Analyzing...",
+    "answerRequired": "Answer the question to continue.",
+    "submitError": "Your result could not be saved. Please try again.",
+    "notFound": "We could not find this test.",
+    "backToTests": "Back to tests"
+  },
+  "results": {
+    "pageTitle": "Results",
+    "congrats": "Congratulations {name}!",
+    "subtitleAi": "Based on your answers, the Artificial Intelligence has processed your vocational profile.",
+    "subtitle": "This is your vocational profile according to the {test}.",
+    "affinityChart": "Affinity chart",
+    "feedbackTitle": "Interpretation and feedback",
+    "interpretationIntro": "Based on your predominant profile in the {first} ({firstCode}) and {second} ({secondCode}) dimensions, your vocational code is {code}.",
+    "recommendedCareers": "Highly recommended careers:",
+    "exploreCareers": "Explore Careers",
+    "downloadReport": "Download report",
+    "notFound": "We could not find this result."
+  },
+  "dimensions": {
+    "artistic": {
+      "name": "Artistic",
+      "radar": "Creative/Artistic",
+      "trait": "This shows a strong ability for visual innovation, creative expression and communicating through images.",
+      "complement": "Your creative side also helps you propose original solutions.",
+      "short": "Artistic"
+    },
+    "social": {
+      "name": "Social",
+      "radar": "Social/Helping",
+      "trait": "This shows that you enjoy helping, teaching and working with people, and that you are driven by having a positive impact.",
+      "complement": "Your social orientation also lets you connect with users' needs and work as a team.",
+      "short": "Social"
+    },
+    "investigative": {
+      "name": "Investigative",
+      "radar": "Investigative/Analytical",
+      "trait": "This shows intellectual curiosity and ease for analysing information and solving complex problems.",
+      "complement": "Your analytical thinking also helps you support your decisions.",
+      "short": "Investigative"
+    },
+    "enterprising": {
+      "name": "Enterprising",
+      "radar": "Enterprising/Leader",
+      "trait": "This shows initiative, leadership and ease for persuading others and leading projects.",
+      "complement": "Your enterprising profile also pushes you to lead and turn ideas into projects.",
+      "short": "Enterprising"
+    },
+    "conventional": {
+      "name": "Conventional",
+      "radar": "Conventional/Organized",
+      "trait": "This shows that you are organised, methodical and perform very well in tasks that require precision.",
+      "complement": "Your sense of order also helps you plan and reach goals.",
+      "short": "Conventional"
+    }
+  },
+  "careers": {
+    "explorer": "Explorer",
+    "compare": "Compare careers",
+    "searchPlaceholder": "Search careers by name or keywords...",
+    "filters": {
+      "area": "Area",
+      "duration": "Duration",
+      "modality": "Modality",
+      "university": "University"
+    },
+    "years": "{n} years",
+    "applyFilters": "Apply filters",
+    "clearFilters": "Clear",
+    "results": "Career results",
+    "viewDetails": "View details",
+    "noResults": "No careers match those filters.",
+    "addToComparison": "Add {name} to the comparison",
+    "removeFromComparison": "Remove {name} from the comparison",
+    "comparisonFull": "You can compare up to {max} careers at a time.",
+    "selectAtLeastTwo": "Select at least 2 careers (tick the circle on each card)."
+  },
+  "careerDetail": {
+    "simulate": "Simulate my professional future",
+    "universities": "Recommended universities:",
+    "duration": "Duration:",
+    "fieldOfWork": "Field of work:",
+    "studyPlan": "Curriculum:",
+    "studyPlanHint": "Check the curriculum at the following links:",
+    "openPlan": "Open the curriculum of {university}",
+    "skills": "Required skills",
+    "averageSalary": "Average salary:",
+    "notFound": "We could not find this career.",
+    "backToExplorer": "Back to the explorer"
+  },
+  "projection": {
+    "pageTitle": "Career projection",
+    "title": "Career projection : {career}",
+    "subtitle": "Simulation based on your vocational results, creative aptitudes and job-market trends.",
+    "compatibility": "Compatibility with your profile!",
+    "timeline": "Simulated career timeline",
+    "estimatedSalary": "Estimated salary:",
+    "recommendations": "Development and action recommendations"
+  },
+  "comparison": {
+    "title": "Career comparison table",
+    "subtitle": "Compare key metrics between the selected careers to make an informed decision.",
+    "criterion": "Criterion / Metric",
+    "rows": {
+      "compatibility": "Vocational Compatibility",
+      "duration": "Program Duration",
+      "salary": "Average Salary Range",
+      "employability": "Employability Level",
+      "universities": "Top Universities",
+      "field": "Main Field of Work",
+      "modality": "Main Modality"
+    },
+    "levels": {
+      "excellent": "Excellent",
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "durationValue": "{years} years ({semesters} semesters)",
+    "demand": "{level} demand",
+    "empty": "You have not selected careers yet. Go back to the explorer and tick the circle of the careers you want to compare."
+  },
+  "favorites": {
+    "title": "Favorites",
+    "add": "Add to favorites",
+    "remove": "Remove from favorites",
+    "removeShort": "Remove from favorites",
+    "empty": "You do not have favorite careers yet."
+  },
+  "tasks": {
+    "title": "Tasks",
+    "history": "Progress history",
+    "plan": "Task plan and recommendations",
+    "date": "Date {date}",
+    "version": "Version {version}",
+    "viewReport": "View Report",
+    "status": "Status:",
+    "statusCompleted": "completed",
+    "statusPending": "Pending",
+    "completed": "Completed",
+    "pending": "Pending",
+    "markCompleted": "Mark as completed",
+    "markPending": "Mark as pending",
+    "noHistory": "You have not taken any test yet.",
+    "noTasks": "You have no assigned tasks."
+  },
+  "sessions": {
+    "title": "Vocational Guidance Sessions",
+    "scheduled": "Scheduled Sessions",
+    "dateTime": "Date and time {value}",
+    "psychologist": "Psychologist: {name}",
+    "viewMore": "See more",
+    "details": "SESSION DETAILS",
+    "notes": "Previous notes",
+    "meetLink": "Meeting link:",
+    "copyLink": "Copy link",
+    "linkCopied": "Link copied",
+    "copyFailed": "The link could not be copied",
+    "join": "Join the live meeting",
+    "empty": "You have no scheduled sessions.",
+    "selectOne": "Select a session to see its details."
+  },
+  "messages": {
+    "title": "Messages",
+    "conversations": "Conversations",
+    "chat": "Chat",
+    "psychologist": "Psychologist {name}",
+    "placeholder": "Write a message...",
+    "send": "Send message",
+    "readNow": "Read just now",
+    "sent": "Sent",
+    "select": "Select a conversation.",
+    "noConversations": "You have no conversations yet.",
+    "noMessages": "No messages yet.",
+    "searchPlaceholder": "Search chat...",
+    "viewStudentProfile": "View student profile"
+  },
+  "community": {
+    "title": "Student Community and Forum",
+    "subtitle": "Connect with other students, share experiences about careers and exchange opinions about universities.",
+    "myCommunities": "My communities",
+    "featuredThreads": "Featured conversation threads",
+    "comments": "0 comments | 1 comment | {n} comments",
+    "comment": "Comment",
+    "writeComment": "Write your comment...",
+    "publish": "Publish",
+    "beFirst": "Be the first to comment.",
+    "noThreads": "There are no threads in this community yet."
+  },
+  "psyDashboard": {
+    "summary": "Students summary",
+    "kpis": {
+      "students": "Total Students",
+      "tests": "Tests Taken",
+      "alerts": "Risk Alerts",
+      "appointments": "Pending Appointments",
+      "alertsHint": "Need attention",
+      "appointmentsHint": "This week"
+    },
+    "filtersTitle": "Risk Filters",
+    "filters": {
+      "all": "All",
+      "highRisk": "High risk",
+      "lowParticipation": "Low participation",
+      "inProgress": "In progress"
+    },
+    "tableCaption": "Assigned students with their progress and risk level",
+    "columns": {
+      "student": "Student",
+      "progress": "Vocational progress",
+      "risk": "Risk level",
+      "lastTest": "Last test",
+      "profile": "Profile"
+    },
+    "risk": {
+      "high": "High risk",
+      "medium": "Medium risk",
+      "low": "Low risk"
+    },
+    "viewProfile": "View profile",
+    "noStudents": "No students match this filter.",
+    "notStarted": "Not started",
+    "notStartedInactive": "Not started - Inactive for {days} days",
+    "suggestionTitle": "Suggestion",
+    "suggestion": "{low} and {inconsistent} were detected; scheduling a group session is recommended.",
+    "suggestionNone": "All your students are progressing normally. Keep supporting their vocational process.",
+    "lowCount": "no students with low participation | 1 student with low participation | {n} students with low participation",
+    "inconsistentCount": "none with inconsistent answers | 1 with inconsistent answers | {n} with inconsistent answers",
+    "apiWarningTitle": "The Fake API is missing the psychologist data",
+    "apiWarning": "These endpoints could not be read: {endpoints}. Replace server/db.json with the new version and restart \"npm run server\" (if you use the Render API, upload the new db.json there)."
+  },
+  "monitoring": {
+    "students": "Students",
+    "searchPlaceholder": "Search student...",
+    "pending": "Pending",
+    "inProgress": "in progress",
+    "date": "Date: {date}",
+    "noMatches": "No students found.",
+    "profileTitle": "Vocational profile : {name}",
+    "evaluationDate": "Evaluation date: {date} {'|'} {test} v{version}",
+    "history": "Results history",
+    "highlight": "Mainly stands out in the {first} ({firstValue}%) and {second} ({secondValue}%) dimensions.",
+    "sendObservation": "Send Observation to Student",
+    "noResults": "This student has not completed any vocational test yet.",
+    "sendReminder": "Send reminder",
+    "observationFor": "Observation for {name}",
+    "observationPlaceholder": "Write your observation or recommendation...",
+    "observationPrefix": "Observation about your vocational profile:",
+    "observationSent": "Observation sent to {name}",
+    "send": "Send"
+  },
+  "reports": {
+    "selectGroup": "Select Group",
+    "export": "Export Report (pdf)",
+    "comparisonTitle": "Profile comparison between groups",
+    "demandedCareers": "Most Demanded Careers in the Group",
+    "preference": "{value}% of total preference",
+    "noData": "There is not enough data yet.",
+    "findingsTitle": "Key Findings and Conclusions",
+    "findingDominant": "{value}% of the students of {group} show strong preferences for the {first} and {second} areas.",
+    "findingCompare": "Compared with {other}, {group} shows more interest in the {dimension} area.",
+    "findingAction": "Recommended action: run a group workshop about the job market and curriculum of {career}.",
+    "organizeWorkshop": "Organize Group Workshop"
+  },
+  "agenda": {
+    "title": "Guidance Sessions Schedule",
+    "add": "Add",
+    "type": "Session type",
+    "individual": "Individual",
+    "group": "Group",
+    "target": "Student/Group:",
+    "chooseStudent": "Choose a student",
+    "chooseGroup": "Choose a group",
+    "students": "Students: {n}",
+    "oneOnOne": "1-on-1 support",
+    "topic": "Session topic",
+    "topicPlaceholder": "E.g. Creative Guidance",
+    "notesPlaceholder": "Meeting goal: ...",
+    "dateTime": "Date and time",
+    "date": "Date",
+    "time": "Time",
+    "scheduleAndNotify": "Schedule and notify the student",
+    "saveChanges": "Save and notify changes",
+    "noNotes": "No notes.",
+    "edit": "Edit",
+    "cancelSession": "Cancel session",
+    "confirmCancel": "Are you sure you want to cancel this session?",
+    "cancelled": "Session cancelled",
+    "emptyDetail": "Select a session or schedule a new one.",
+    "individualTitle": "Individual Session",
+    "groupTitle": "Group Session #{number}",
+    "errors": {
+      "required": "Choose the student or group, the date and the time.",
+      "server": "The session could not be saved."
+    },
+    "scheduled": "Session scheduled",
+    "updated": "Session updated",
+    "notified": "Students were notified by message.",
+    "notification": "I scheduled the session \"{title}\" for {date}. Link: {link}",
+    "notificationUpdate": "I updated the session \"{title}\": {date}. Link: {link}"
+  },
+  "resources": {
+    "title": "Resource library",
+    "searchPlaceholder": "Search resource or guide...",
+    "updated": "Last update:",
+    "download": "Download",
+    "downloadNamed": "Download {title}",
+    "share": "Share",
+    "shareNamed": "Share {title}",
+    "cover": "Cover of {title}",
+    "noResults": "No resources found.",
+    "shareTitle": "Share \"{title}\"",
+    "shareWith": "Send to",
+    "note": "Message (optional)",
+    "defaultNote": "Here is a resource for you:",
+    "send": "Share",
+    "shared": "Resource shared with {name}"
+  }
+}

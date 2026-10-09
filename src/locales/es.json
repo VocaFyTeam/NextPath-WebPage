@@ -1,0 +1,437 @@
+{
+  "home": {
+    "title": "Bienvenido a NextPath",
+    "description": "Tu plataforma para tomar decisiones vocacionales informadas."
+  },
+  "navigation": {
+    "home": "Inicio",
+    "about": "Acerca de"
+  },
+  "common": {
+    "language": "Idioma",
+    "back": "Volver",
+    "error": "Ocurrió un error",
+    "cancel": "Cancelar"
+  },
+  "nav": {
+    "mainMenu": "Menú principal",
+    "openMenu": "Abrir menú",
+    "profileMenu": "Menú de perfil",
+    "home": "Inicio",
+    "favorites": "Favoritos",
+    "tests": "Test",
+    "careers": "Carreras",
+    "tasks": "Tareas",
+    "sessions": "Sesiones de orientación",
+    "messages": "Mensajes",
+    "community": "Comunidad",
+    "about": "Acerca de",
+    "studentResults": "Resultados Alumnos",
+    "reports": "Reporte y Analítica",
+    "resources": "Recursos vocacionales"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe o fue movida.",
+    "back": "Volver al inicio"
+  },
+  "auth": {
+    "welcomeTitle": "Bienvenido",
+    "tagline": "Descubre la carrera que va contigo y toma decisiones con seguridad",
+    "logIn": "Log In",
+    "signUp": "Sign Up",
+    "backHome": "Volver a la portada",
+    "signInTitle": "Inicio Sesión",
+    "signUpTitle": "Registrarse",
+    "emailPlaceholder": "Usuario o correo",
+    "email": "Correo",
+    "password": "Contraseña",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "role": "Rol",
+    "roles": {
+      "student": "Estudiante",
+      "psychologist": "Psicólogo"
+    },
+    "rememberMe": "Recuérdame",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "forgotPasswordDetail": "Escríbenos a soporte{'@'}nextpath.com y te ayudaremos a recuperarla.",
+    "enter": "ENTRAR",
+    "noAccount": "¿No tienes cuenta?",
+    "registerLink": "Regístrate",
+    "haveAccount": "¿Ya tienes cuenta?",
+    "signInLink": "Inicia sesión",
+    "signOut": "Cerrar sesión",
+    "errors": {
+      "required": "Ingresa tu correo y contraseña.",
+      "invalidCredentials": "Correo o contraseña incorrectos.",
+      "signUpRequired": "Completa todos los campos. La contraseña debe tener al menos 6 caracteres.",
+      "emailTaken": "Ya existe una cuenta con ese correo.",
+      "server": "No pudimos conectar con el servidor. Verifica que la Fake API esté activa."
+    }
+  },
+  "dashboard": {
+    "greeting": "¡Hola, {name}!",
+    "welcome": "Bienvenido a tu portal de orientación vocacional Nextpath.",
+    "summary": "Tienes {tasks} y {sessions}.",
+    "tasksCount": "0 tareas pendientes | 1 tarea pendiente | {n} tareas pendientes",
+    "sessionsCount": "0 sesiones agendadas | 1 sesión agendada | {n} sesiones agendadas",
+    "shortcuts": "Accesos directos",
+    "cards": {
+      "tests": "Tests Vocacionales",
+      "careers": "Explorar Carreras",
+      "sessions": "Sesiones de orientación",
+      "messages": "Mensajes",
+      "goTests": "Ir a Test",
+      "goCareers": "Ir a Carreras",
+      "goSessions": "Ir a Sesiones",
+      "goMessages": "Ir a Mensajes"
+    },
+    "progressTitle": "Mi progreso vocacional general",
+    "completed": "{value} % completado",
+    "testLine": "Test vocacional {number} ({name})",
+    "status": {
+      "completed": "Completado",
+      "inProgress": "En progreso",
+      "suggested": "Sugerido"
+    },
+    "favoritesLine": "Selección de Carreras Favoritas",
+    "favoritesDetail": "Aún no guardas carreras | 1 carrera guardada para comparación | {n} carreras guardadas para comparación",
+    "nextTasks": "Mis próximas tareas",
+    "noTasks": "¡No tienes tareas pendientes!"
+  },
+  "tests": {
+    "title": "Test vocacionales",
+    "subtitle": "Explora nuestras evaluaciones para descubrir tus habilidades, personalidad e intereses profesionales",
+    "start": "Iniciar Test",
+    "continue": "Continuar",
+    "completedOn": "Completado el {date}",
+    "inProgress": "En progreso desde el {date}",
+    "viewResult": "Ver resultado"
+  },
+  "test": {
+    "progress": "Progreso",
+    "question": "Pregunta {number}:",
+    "placeholder": "Escribe tu respuesta aquí...",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "finish": "Finalizar",
+    "analyzing": "Analizando...",
+    "answerRequired": "Responde la pregunta para continuar.",
+    "submitError": "No se pudo guardar tu resultado. Inténtalo nuevamente.",
+    "notFound": "No encontramos este test.",
+    "backToTests": "Volver a los tests"
+  },
+  "results": {
+    "pageTitle": "Resultados",
+    "congrats": "¡Felicitaciones {name}!",
+    "subtitleAi": "En base a tus respuestas, la Inteligencia Artificial ha procesado tu perfil vocacional.",
+    "subtitle": "Este es tu perfil vocacional según el {test}.",
+    "affinityChart": "Diagrama de afinidad",
+    "feedbackTitle": "Interpretación y feedback",
+    "interpretationIntro": "Basado en tu perfil predominante en las dimensiones {first} ({firstCode}) y {second} ({secondCode}), tu código vocacional es {code}.",
+    "recommendedCareers": "Carreras altamente recomendadas:",
+    "exploreCareers": "Explorar Carreras",
+    "downloadReport": "Descargar reporte",
+    "notFound": "No encontramos este resultado."
+  },
+  "dimensions": {
+    "artistic": {
+      "name": "Artístico",
+      "radar": "Creativo/Artístico",
+      "trait": "Esto indica que posees una gran capacidad para la innovación visual, la expresión creativa y la comunicación a través de imágenes.",
+      "complement": "Además, tu lado creativo te ayuda a proponer soluciones originales.",
+      "short": "Artística"
+    },
+    "social": {
+      "name": "Social",
+      "radar": "Social/Ayuda",
+      "trait": "Esto indica que disfrutas ayudar, enseñar y trabajar con personas, y que te motiva generar un impacto positivo en los demás.",
+      "complement": "Además, tu orientación social te permite conectar con las necesidades del usuario y trabajar en equipo.",
+      "short": "Social"
+    },
+    "investigative": {
+      "name": "Investigador",
+      "radar": "Investigador/Analítico",
+      "trait": "Esto indica que tienes curiosidad intelectual y facilidad para analizar información y resolver problemas complejos.",
+      "complement": "Además, tu pensamiento analítico te ayuda a fundamentar tus decisiones.",
+      "short": "Investigador"
+    },
+    "enterprising": {
+      "name": "Emprendedor",
+      "radar": "Emprendedor/Líder",
+      "trait": "Esto indica que tienes iniciativa, capacidad de liderazgo y facilidad para persuadir y dirigir proyectos.",
+      "complement": "Además, tu perfil emprendedor te impulsa a liderar y convertir ideas en proyectos.",
+      "short": "Emprendedor"
+    },
+    "conventional": {
+      "name": "Convencional",
+      "radar": "Convencional/Ordenado",
+      "trait": "Esto indica que eres organizado, metódico y que te desempeñas muy bien en tareas que requieren precisión.",
+      "complement": "Además, tu sentido del orden te ayuda a planificar y cumplir metas.",
+      "short": "Convencional"
+    }
+  },
+  "careers": {
+    "explorer": "Explorador",
+    "compare": "Comparar carreras",
+    "searchPlaceholder": "Buscar carrera por nombre o palabras clave...",
+    "filters": {
+      "area": "Área",
+      "duration": "Duración",
+      "modality": "Modalidad",
+      "university": "Universidad"
+    },
+    "years": "{n} años",
+    "applyFilters": "Aplicar filtros",
+    "clearFilters": "Limpiar",
+    "results": "Resultados de carreras",
+    "viewDetails": "Ver detalles",
+    "noResults": "No encontramos carreras con esos filtros.",
+    "addToComparison": "Agregar {name} a la comparación",
+    "removeFromComparison": "Quitar {name} de la comparación",
+    "comparisonFull": "Puedes comparar hasta {max} carreras a la vez.",
+    "selectAtLeastTwo": "Selecciona al menos 2 carreras (marca el círculo de cada tarjeta)."
+  },
+  "careerDetail": {
+    "simulate": "Simular mi futuro profesional",
+    "universities": "Universidades recomendadas:",
+    "duration": "Duración:",
+    "fieldOfWork": "Campo laboral:",
+    "studyPlan": "Plan de estudios:",
+    "studyPlanHint": "Consulta el plan de estudios en los siguientes enlaces:",
+    "openPlan": "Abrir plan de estudios de {university}",
+    "skills": "Competencias requeridas",
+    "averageSalary": "Salario promedio:",
+    "notFound": "No encontramos esta carrera.",
+    "backToExplorer": "Volver al explorador"
+  },
+  "projection": {
+    "pageTitle": "Proyección de carrera",
+    "title": "Proyección de carrera : {career}",
+    "subtitle": "Simulación basada en la fusión de tus resultados vocacionales, aptitudes creativas y tendencias del mercado laboral.",
+    "compatibility": "Compatibilidad con tu perfil!",
+    "timeline": "Línea de tiempo y evolución laboral simulada",
+    "estimatedSalary": "Salario Estimado:",
+    "recommendations": "Recomendaciones de desarrollo y acción"
+  },
+  "comparison": {
+    "title": "Tabla comparativa de carreras",
+    "subtitle": "Compara métricas clave entre las carreras seleccionadas para tomar una decisión informada.",
+    "criterion": "Criterio / Métrica",
+    "rows": {
+      "compatibility": "Compatibilidad Vocacional",
+      "duration": "Duración de la Carrera",
+      "salary": "Rango Salarial Promedio",
+      "employability": "Nivel de Empleabilidad",
+      "universities": "Universidades Top",
+      "field": "Campo Laboral Principal",
+      "modality": "Modalidad Predominante"
+    },
+    "levels": {
+      "excellent": "Excelente",
+      "high": "Alto",
+      "medium": "Medio",
+      "low": "Bajo"
+    },
+    "durationValue": "{years} años ({semesters} Semestres)",
+    "demand": "Demanda {level}",
+    "empty": "Aún no seleccionas carreras. Vuelve al explorador y marca el círculo de las carreras que quieras comparar."
+  },
+  "favorites": {
+    "title": "Favoritos",
+    "add": "Agregar a favoritos",
+    "remove": "Quitar de favoritos",
+    "removeShort": "Quitar de favoritos",
+    "empty": "Todavía no tienes carreras favoritas."
+  },
+  "tasks": {
+    "title": "Tareas",
+    "history": "Historial evolución",
+    "plan": "Plan de tareas y recomendados",
+    "date": "Fecha {date}",
+    "version": "Versión {version}",
+    "viewReport": "Ver Reporte",
+    "status": "Estado:",
+    "statusCompleted": "completado",
+    "statusPending": "Pendiente",
+    "completed": "Completado",
+    "pending": "Pendiente",
+    "markCompleted": "Marcar como completada",
+    "markPending": "Marcar como pendiente",
+    "noHistory": "Aún no rindes ningún test.",
+    "noTasks": "No tienes tareas asignadas."
+  },
+  "sessions": {
+    "title": "Sesiones de Orientación Vocacional",
+    "scheduled": "Sesiones Programadas",
+    "dateTime": "Fecha y Hora {value}",
+    "psychologist": "Psicólogo: {name}",
+    "viewMore": "Ver Más",
+    "details": "DETALLES DE SESIÓN",
+    "notes": "Observaciones previas",
+    "meetLink": "Enlace de la reunión:",
+    "copyLink": "Copiar enlace",
+    "linkCopied": "Enlace copiado",
+    "copyFailed": "No se pudo copiar el enlace",
+    "join": "Unirse a la reunión en Vivo",
+    "empty": "No tienes sesiones programadas.",
+    "selectOne": "Selecciona una sesión para ver sus detalles."
+  },
+  "messages": {
+    "title": "Mensajes",
+    "conversations": "Conversaciones",
+    "chat": "Chat",
+    "psychologist": "Psicólogo {name}",
+    "placeholder": "Escribe un mensaje...",
+    "send": "Enviar mensaje",
+    "readNow": "Leído justo ahora",
+    "sent": "Enviado",
+    "select": "Selecciona una conversación.",
+    "noConversations": "Aún no tienes conversaciones.",
+    "noMessages": "Aún no hay mensajes.",
+    "searchPlaceholder": "Buscar chat...",
+    "viewStudentProfile": "Ver ficha del alumno"
+  },
+  "community": {
+    "title": "Comunidad y Foro Estudiantil",
+    "subtitle": "Conéctate con otros estudiantes, comparte experiencias sobre carreras e intercambia opiniones sobre universidades.",
+    "myCommunities": "Mis comunidades",
+    "featuredThreads": "Hilos de conversación destacados",
+    "comments": "0 comentarios | 1 comentario | {n} comentarios",
+    "comment": "Comentar",
+    "writeComment": "Escribe tu comentario...",
+    "publish": "Publicar",
+    "beFirst": "Sé el primero en comentar.",
+    "noThreads": "No hay hilos en esta comunidad todavía."
+  },
+  "psyDashboard": {
+    "summary": "Resumen de estudiantes",
+    "kpis": {
+      "students": "Total Estudiantes",
+      "tests": "Test Rendidos",
+      "alerts": "Alertas de Riesgo",
+      "appointments": "Citas Pendientes",
+      "alertsHint": "Requieren atención",
+      "appointmentsHint": "Esta semana"
+    },
+    "filtersTitle": "Filtros de Riesgo",
+    "filters": {
+      "all": "Todos",
+      "highRisk": "Alto riesgo",
+      "lowParticipation": "Baja participación",
+      "inProgress": "En progreso"
+    },
+    "tableCaption": "Estudiantes asignados con su avance y nivel de riesgo",
+    "columns": {
+      "student": "Estudiante",
+      "progress": "Avance vocacional",
+      "risk": "Nivel de riesgo",
+      "lastTest": "Último test",
+      "profile": "Ver ficha"
+    },
+    "risk": {
+      "high": "Riesgo Alto",
+      "medium": "Riesgo medio",
+      "low": "Riesgo bajo"
+    },
+    "viewProfile": "Ver ficha",
+    "noStudents": "No hay estudiantes con este filtro.",
+    "notStarted": "Sin iniciar",
+    "notStartedInactive": "Sin iniciar - Inactividad {days} días",
+    "suggestionTitle": "Sugerencia",
+    "suggestion": "Se detectaron {low} y {inconsistent}, se recomienda programar una sesión grupal.",
+    "suggestionNone": "Todos tus estudiantes avanzan con normalidad. Sigue acompañando su proceso vocacional.",
+    "lowCount": "ningún alumno con baja participación | 1 alumno con baja participación | {n} alumnos con baja participación",
+    "inconsistentCount": "ninguno con respuestas inconsistentes | 1 con respuestas inconsistentes | {n} con respuestas inconsistentes",
+    "apiWarningTitle": "La Fake API no tiene los datos del psicólogo",
+    "apiWarning": "No se pudieron leer: {endpoints}. Reemplaza server/db.json por la versión nueva y reinicia \"npm run server\" (si usas la API de Render, sube ahí el nuevo db.json)."
+  },
+  "monitoring": {
+    "students": "Estudiantes",
+    "searchPlaceholder": "Buscar alumno...",
+    "pending": "Pendiente",
+    "inProgress": "en progreso",
+    "date": "Fecha: {date}",
+    "noMatches": "No se encontraron alumnos.",
+    "profileTitle": "Perfil vocacional : {name}",
+    "evaluationDate": "Fecha de evaluación: {date} {'|'} {test} v{version}",
+    "history": "Historial de resultados",
+    "highlight": "Destaca predominantemente en las dimensiones {first} ({firstValue}%) y {second} ({secondValue}%).",
+    "sendObservation": "Enviar Observación al Alumno",
+    "noResults": "Este alumno aún no completa ningún test vocacional.",
+    "sendReminder": "Enviar recordatorio",
+    "observationFor": "Observación para {name}",
+    "observationPlaceholder": "Escribe tu observación o recomendación...",
+    "observationPrefix": "Observación de tu perfil vocacional:",
+    "observationSent": "Observación enviada a {name}",
+    "send": "Enviar"
+  },
+  "reports": {
+    "selectGroup": "Seleccionar Grupo",
+    "export": "Exportar Reporte (pdf)",
+    "comparisonTitle": "Comparación de perfiles entre grupos",
+    "demandedCareers": "Carreras Más Demandadas en el Grupo",
+    "preference": "{value}% de preferencia total",
+    "noData": "Aún no hay datos suficientes.",
+    "findingsTitle": "Hallazgos Clave y Conclusiones",
+    "findingDominant": "El {value}% de los alumnos del {group} muestra preferencias marcadas por áreas {first} y {second}.",
+    "findingCompare": "En comparación con el {other}, el {group} presenta mayor interés en el área {dimension}.",
+    "findingAction": "Recomendación de acción: se sugiere realizar un taller grupal sobre el mercado laboral y las mallas de {career}.",
+    "organizeWorkshop": "Organizar Taller Grupal"
+  },
+  "agenda": {
+    "title": "Programación de Sesiones de Orientación",
+    "add": "Agregar",
+    "type": "Tipo de Sesión",
+    "individual": "Individual",
+    "group": "Grupal",
+    "target": "Estudiante/Grupo:",
+    "chooseStudent": "Selecciona un estudiante",
+    "chooseGroup": "Selecciona un grupo",
+    "students": "Alumnos: {n}",
+    "oneOnOne": "Acompañamiento 1 a 1",
+    "topic": "Tema de la sesión",
+    "topicPlaceholder": "Ej. Orientación Creativa",
+    "notesPlaceholder": "Objetivo de la reunión: ...",
+    "dateTime": "Fecha y hora",
+    "date": "Fecha",
+    "time": "Hora",
+    "scheduleAndNotify": "Agendar y notificar al estudiante",
+    "saveChanges": "Guardar y notificar cambios",
+    "noNotes": "Sin observaciones.",
+    "edit": "Editar",
+    "cancelSession": "Cancelar sesión",
+    "confirmCancel": "¿Seguro que deseas cancelar esta sesión?",
+    "cancelled": "Sesión cancelada",
+    "emptyDetail": "Selecciona una sesión o agenda una nueva.",
+    "individualTitle": "Sesión Individual",
+    "groupTitle": "Sesión Grupal #{number}",
+    "errors": {
+      "required": "Elige el estudiante o grupo, la fecha y la hora.",
+      "server": "No se pudo guardar la sesión."
+    },
+    "scheduled": "Sesión agendada",
+    "updated": "Sesión actualizada",
+    "notified": "Se notificó a los estudiantes por mensaje.",
+    "notification": "Te agendé la sesión \"{title}\" para el {date}. Enlace: {link}",
+    "notificationUpdate": "Actualicé la sesión \"{title}\": {date}. Enlace: {link}"
+  },
+  "resources": {
+    "title": "Biblioteca de recursos",
+    "searchPlaceholder": "Buscar recurso o guía...",
+    "updated": "Última actualización:",
+    "download": "Descargar",
+    "downloadNamed": "Descargar {title}",
+    "share": "Compartir",
+    "shareNamed": "Compartir {title}",
+    "cover": "Portada de {title}",
+    "noResults": "No se encontraron recursos.",
+    "shareTitle": "Compartir \"{title}\"",
+    "shareWith": "Enviar a",
+    "note": "Mensaje (opcional)",
+    "defaultNote": "Te comparto este recurso:",
+    "send": "Compartir",
+    "shared": "Recurso compartido con {name}"
+  }
+}
