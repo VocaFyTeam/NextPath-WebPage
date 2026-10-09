@@ -4,7 +4,6 @@ import { createI18n } from 'vue-i18n';
 
 const LOCALE_KEY = 'nextpath-locale';
 
-/** @returns {string} Saved locale or Spanish (language of the mockups). */
 function initialLocale() {
     try {
         return localStorage.getItem(LOCALE_KEY) || 'es';
@@ -20,10 +19,7 @@ const i18n = createI18n({
     messages: { en, es }
 });
 
-/**
- * Changes and persists the UI language.
- * @param {'es'|'en'} locale
- */
+
 export function setLocale(locale) {
     i18n.global.locale.value = locale;
     document.documentElement.lang = locale;

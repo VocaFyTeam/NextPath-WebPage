@@ -251,16 +251,12 @@ img {
   100% { background-position: 0 50%; }
 }
 
-/* PrimeVue fine tuning so components match the mock-ups */
 .p-select,
 .p-inputtext,
 .p-textarea {
   font-family: var(--np-font-body);
 }
 
-/* =========================
-   PRINT (Descargar reporte)
-========================= */
 
 @media print {
   .np-no-print {
@@ -271,109 +267,3 @@ img {
     background: #fff;
   }
 }
-
-/* =========================
-   PSYCHOLOGIST DASHBOARD (legacy, iam/presentation/views/dashboard.vue)
-========================= */
-
-.dashboard-page {
-  min-height: 100vh;
-  background: #f6f8fb;
-}
-
-.dashboard-header {
-  height: 72px;
-  padding: 0 32px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  background: white;
-  border-bottom: 1px solid #e2e8f0;
-}
-
-.dashboard-brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.dashboard-brand .brand-logo img{
-  width: 20%;
-  height: 20%;
-  margin: 0;
-
-  border-radius: 12px;
-}
-
-.dashboard-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 48px 28px;
-}
-
-.welcome-section {
-  margin-bottom: 32px;
-}
-
-.dashboard-label {
-  color: var(--np-primary);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.welcome-section h2 {
-  margin: 8px 0;
-  font-size: 34px;
-}
-
-.welcome-section p {
-  max-width: 650px;
-  margin: 0;
-
-  color: #64748b;
-  line-height: 1.6;
-}
-
-.dashboard-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.dashboard-card {
-  min-height: 220px;
-}
-
-.dashboard-card i {
-  margin-right: 8px;
-  color: var(--np-primary);
-}
-
-.dashboard-card p {
-  min-height: 70px;
-  color: #64748b;
-  line-height: 1.5;
-}
-
-@media (max-width: 800px) {
-
-  .dashboard-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .dashboard-header {
-    padding: 0 18px;
-  }
-
-  .dashboard-content {
-    padding: 32px 18px;
-  }
-
-  .welcome-section h2 {
-    font-size: 28px;
-  }
-}
-

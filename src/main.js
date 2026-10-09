@@ -13,6 +13,7 @@ import Checkbox from 'primevue/checkbox';
 import Dialog from 'primevue/dialog';
 import InputText from 'primevue/inputtext';
 import Password from 'primevue/password';
+import MultiSelect from 'primevue/multiselect';
 import ProgressBar from 'primevue/progressbar';
 import Select from 'primevue/select';
 import Textarea from 'primevue/textarea';
@@ -31,6 +32,7 @@ createApp(App)
     .component('pv-checkbox', Checkbox)
     .component('pv-dialog', Dialog)
     .component('pv-input-text', InputText)
+    .component('pv-multi-select', MultiSelect)
     .component('pv-password', Password)
     .component('pv-progress-bar', ProgressBar)
     .component('pv-select', Select)
