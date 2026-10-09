@@ -2,7 +2,7 @@
 import { computed, onMounted, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useCareerExplorationStore } from '../../application/career-exploration.store.js';
-import { useCareerCompatibility } from '../../application/use-career-compatibility.js';
+import { useCareerCompatibility } from '../../application/use-career-compability.js';
 
 const { t } = useI18n();
 const store = useCareerExplorationStore();
