@@ -1422,7 +1422,7 @@
     {
       "id": "1",
       "name": "Diseño Gráfico",
-      "emoji": "🎨",
+      "emoji": "\ud83c\udfa8",
       "area": "Diseño y Arte",
       "imageUrl": "/images/careers/graphic-design.jpg",
       "shortDescription": "Creación de identidades visuales y material publicitario.",
@@ -1510,7 +1510,7 @@
     {
       "id": "2",
       "name": "Diseño de Interiores",
-      "emoji": "🏢",
+      "emoji": "\ud83c\udfe2",
       "area": "Diseño y Arte",
       "imageUrl": "/images/careers/interior-design.jpg",
       "shortDescription": "Planeación de espacios funcionales y estéticos.",
@@ -1598,7 +1598,7 @@
     {
       "id": "3",
       "name": "Diseño Industrial",
-      "emoji": "🖥️",
+      "emoji": "\ud83d\udda5\ufe0f",
       "area": "Diseño y Arte",
       "imageUrl": "/images/careers/industrial-design.jpg",
       "shortDescription": "Desarrollar productos pensados para ser fabricados en serie por métodos industriales.",
@@ -1691,7 +1691,7 @@
     {
       "id": "4",
       "name": "Periodismo y Medios Digitales",
-      "emoji": "🎙️",
+      "emoji": "\ud83c\udf99\ufe0f",
       "area": "Comunicaciones",
       "imageUrl": "/images/careers/journalism.svg",
       "shortDescription": "Investigación, redacción y producción de contenidos en medios digitales.",
@@ -1779,7 +1779,7 @@
     {
       "id": "5",
       "name": "Psicología",
-      "emoji": "🧠",
+      "emoji": "\ud83e\udde0",
       "area": "Ciencias Sociales",
       "imageUrl": "/images/careers/psychology.svg",
       "shortDescription": "Estudio del comportamiento humano y los procesos mentales.",
@@ -1867,7 +1867,7 @@
     {
       "id": "6",
       "name": "Ingeniería de Software",
-      "emoji": "💻",
+      "emoji": "\ud83d\udcbb",
       "area": "Tecnología",
       "imageUrl": "/images/careers/software.svg",
       "shortDescription": "Diseño, desarrollo y mantenimiento de soluciones de software.",
