@@ -2,7 +2,7 @@
 import { computed, onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 import { useCareerExplorationStore } from '../../application/career-exploration.store.js';
-import { useCareerCompatibility } from '../../application/use-career-compability.js';
+import { useCareerCompatibility } from '../../application/use-career-compatibility.js';
 
 const route = useRoute();
 const store = useCareerExplorationStore();

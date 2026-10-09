@@ -1,6 +1,6 @@
 const CareerList = () => import('./views/career-list.vue');
 const CareerDetail = () => import('./views/career-detail.vue');
-const CareerProjection = () => import('../presentation/views/career-projection.vue');
+const CareerProjection = () => import('../../../../../Aplicaciones Web/nextpath/src/carrer-exploration/presentation/views/career-projection.vue');
 const CareerComparison = () => import('./views/career-comparison.vue');
 const FavoriteCareers = () => import('./views/favorite-careers.vue');
 

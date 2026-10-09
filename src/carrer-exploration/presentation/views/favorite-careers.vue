@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue';
 import { useIamStore } from '../../../iam/application/iam.store.js';
 import { useCareerExplorationStore } from '../../application/career-exploration.store.js';
-import CareerCard from '../../presentation/components/career-card.vue';
+import CareerCard from '../../../../../../Aplicaciones Web/nextpath/src/carrer-exploration/presentation/components/career-card.vue';
 
 const iamStore = useIamStore();
 const store = useCareerExplorationStore();

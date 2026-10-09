@@ -4,7 +4,7 @@ import { useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import { useToast } from 'primevue/usetoast';
 import { useCareerExplorationStore, MAX_COMPARISON } from '../../application/career-exploration.store.js';
-import CareerCard from '../../presentation/components/career-card.vue';
+import CareerCard from '../../../../../../Aplicaciones Web/nextpath/src/carrer-exploration/presentation/components/career-card.vue';
 
 const router = useRouter();
 const toast = useToast();

@@ -1,7 +1,6 @@
 <script setup>
 
 defineProps({
-  /** @type {import('../../domain/model/career.entity.js').Career} */
   career: { type: Object, required: true },
   selectable: { type: Boolean, default: false },
   selected: { type: Boolean, default: false }
