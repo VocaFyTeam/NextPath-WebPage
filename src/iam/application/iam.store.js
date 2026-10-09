@@ -8,6 +8,7 @@ import { User } from '../domain/model/user.entity.js';
 const iamApi = new IamApi();
 const SESSION_KEY = 'nextpath-user';
 
+
 function readStoredSession() {
     try {
         const raw = localStorage.getItem(SESSION_KEY) ?? sessionStorage.getItem(SESSION_KEY);
@@ -16,6 +17,7 @@ function readStoredSession() {
         return null;
     }
 }
+
 
 function writeStoredSession(user, rememberMe) {
     const storage = rememberMe ? localStorage : sessionStorage;
@@ -28,18 +30,15 @@ function clearStoredSession() {
 }
 
 export const useIamStore = defineStore('iam', () => {
-
     const currentUser = ref(readStoredSession());
-
     const loading = ref(false);
-
     const errors = ref([]);
 
     const isSignedIn = computed(() => currentUser.value !== null);
     const isStudent = computed(() => currentUser.value?.role === 'student');
 
     const homeRoute = computed(() =>
-        currentUser.value?.role === 'psychologist' ? { name: 'dashboard' } : { name: 'student-home' });
+        currentUser.value?.role === 'psychologist' ? { name: 'psychologist-home' } : { name: 'student-home' });
 
     const user = computed(() => currentUser.value);
     const isAuthenticated = isSignedIn;
