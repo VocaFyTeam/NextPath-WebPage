@@ -24,7 +24,8 @@ export class MessageAssembler {
             senderRole: entity.senderRole,
             text: entity.text,
             sentAt: entity.sentAt,
-            read: entity.read
+            read: entity.read,
+            ...(entity.attachment ? { attachment: entity.attachment } : {})
         };
     }
 }

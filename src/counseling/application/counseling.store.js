@@ -3,27 +3,38 @@ import { defineStore } from 'pinia';
 import { computed, ref } from 'vue';
 import { CounselingApi } from '../infrastructure/counseling-api.js';
 import { CounselingSessionAssembler } from '../infrastructure/counseling-session.assembler.js';
-import { CounselingSession } from '../domain/model/counseling-session.entity.js';
 
 const counselingApi = new CounselingApi();
+const DAY = 86400000;
 
 export const useCounselingStore = defineStore('counseling', () => {
-    const sessions = ref([]);
+    const psychologistSessions = ref([]);
     const studentSessions = ref([]);
     const selectedSessionId = ref(null);
+    const saving = ref(false);
     const errors = ref([]);
 
+    const byDate = (a, b) => a.timestamp - b.timestamp;
+
     const upcomingStudentSessions = computed(() =>
-        studentSessions.value.filter(session => session.isScheduled).sort((a, b) => a.timestamp - b.timestamp));
+        studentSessions.value.filter(session => session.isScheduled).sort(byDate));
 
     const selectedSession = computed(() =>
         upcomingStudentSessions.value.find(session => session.id === selectedSessionId.value)
         ?? upcomingStudentSessions.value[0] ?? null);
 
-    async function fetchSessions() {
+    const scheduledPsychologistSessions = computed(() =>
+        psychologistSessions.value.filter(session => session.isScheduled).sort(byDate));
+
+    function sessionsInNextDays(days) {
+        const now = Date.now();
+        return scheduledPsychologistSessions.value.filter(session => session.timestamp >= now - DAY / 2 && session.timestamp <= now + days * DAY);
+    }
+
+    async function fetchPsychologistSessions(psychologistId) {
         try {
-            const response = await counselingApi.getSessions();
-            sessions.value = CounselingSessionAssembler.toEntitiesFromResponse(response);
+            const response = await counselingApi.getSessions({ psychologistId });
+            psychologistSessions.value = CounselingSessionAssembler.toEntitiesFromResponse(response);
         } catch (error) {
             errors.value.push(error);
         }
@@ -31,44 +42,46 @@ export const useCounselingStore = defineStore('counseling', () => {
 
     async function fetchStudentSessions(studentId) {
         try {
-            const response = await counselingApi.getSessions({ studentId });
-            studentSessions.value = CounselingSessionAssembler.toEntitiesFromResponse(response);
+            const response = await counselingApi.getSessions();
+            studentSessions.value = CounselingSessionAssembler.toEntitiesFromResponse(response)
+                .filter(session => session.involves(studentId));
         } catch (error) {
             errors.value.push(error);
         }
     }
-
 
     function selectSession(id) {
         selectedSessionId.value = String(id);
     }
 
-    async function addSession(sessionData) {
-        const entity = new CounselingSession({ ...sessionData });
+    async function saveSession(session) {
+        saving.value = true;
         try {
-            const response = await counselingApi.createSession(CounselingSessionAssembler.toResourceFromEntity(entity));
-            sessions.value.push(CounselingSessionAssembler.toEntityFromResource(response.data));
+            const resource = CounselingSessionAssembler.toResourceFromEntity(session);
+            const response = session.id ? await counselingApi.updateSession(resource) : await counselingApi.createSession(resource);
+            const saved = CounselingSessionAssembler.toEntityFromResource(response.data);
+            const index = psychologistSessions.value.findIndex(s => s.id === saved.id);
+            if (index !== -1) psychologistSessions.value[index] = saved; else psychologistSessions.value.push(saved);
+            return saved;
         } catch (error) {
             errors.value.push(error);
-            sessions.value.push(new CounselingSession({ ...sessionData, id: String(Date.now()) }));
+            return null;
+        } finally {
+            saving.value = false;
         }
     }
 
     async function cancelSession(id) {
-        const session = sessions.value.find(s => s.id === id);
+        const session = psychologistSessions.value.find(s => s.id === id);
         if (!session) return;
         session.status = 'CANCELLED';
-        try {
-            await counselingApi.updateSession(CounselingSessionAssembler.toResourceFromEntity(session));
-        } catch (error) {
-            errors.value.push(error);
-        }
+        await saveSession(session);
     }
 
     return {
-        sessions, studentSessions, selectedSessionId, errors,
-        upcomingStudentSessions, selectedSession,
-        fetchSessions, fetchStudentSessions, selectSession, addSession, cancelSession
+        psychologistSessions, studentSessions, selectedSessionId, saving, errors,
+        upcomingStudentSessions, selectedSession, scheduledPsychologistSessions,
+        sessionsInNextDays, fetchPsychologistSessions, fetchStudentSessions, selectSession, saveSession, cancelSession
     };
 });
 

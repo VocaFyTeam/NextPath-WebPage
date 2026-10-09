@@ -7,7 +7,7 @@ const messagesEndpointPath = import.meta.env.VITE_MESSAGES_ENDPOINT_PATH;
 
 /**
  * Infrastructure gateway for the Counseling bounded context
- * (orientation sessions and direct messages with psychologists).
+ * (orientation sessions and direct messages between students and psychologists).
  *
  * @class CounselingApi
  * @extends BaseApi
@@ -25,7 +25,7 @@ export class CounselingApi extends BaseApi {
     }
 
     // ----- Sessions -----
-    /** @param {Object} [filters] @returns {Promise<import('axios').AxiosResponse>} */
+    /** @param {Object} [filters] - json-server filters. @returns {Promise<import('axios').AxiosResponse>} */
     getSessions(filters = {}) {
         return this.#sessionsEndpoint.getAll(filters);
     }
@@ -40,18 +40,20 @@ export class CounselingApi extends BaseApi {
         return this.#sessionsEndpoint.update(resource.id, resource);
     }
 
-    // ----- Messaging -----
-    /** @param {string} studentId @returns {Promise<import('axios').AxiosResponse>} */
-    getConversationsByStudentId(studentId) {
-        return this.#conversationsEndpoint.getAll({ studentId });
+    // ----- Conversations -----
+    /** @param {Object} filters - { studentId } or { psychologistId }. @returns {Promise<import('axios').AxiosResponse>} */
+    getConversations(filters) {
+        return this.#conversationsEndpoint.getAll(filters);
     }
 
-    /** @param {string} conversationId @returns {Promise<import('axios').AxiosResponse>} */
+    createConversation(resource) {
+        return this.#conversationsEndpoint.create(resource);
+    }
+
     getMessagesByConversationId(conversationId) {
         return this.#messagesEndpoint.getAll({ conversationId, _sort: 'sentAt', _order: 'asc' });
     }
 
-    /** @param {Object} resource @returns {Promise<import('axios').AxiosResponse>} */
     createMessage(resource) {
         return this.#messagesEndpoint.create(resource);
     }
