@@ -1,4 +1,4 @@
-const VocationalTestList = () => import('../../../../../Aplicaciones Web/nextpath/src/assessments/presentation/view/vocational-test-list.vue');
+import VocationalTestList from "./view/vocational-test-list.vue";
 const VocationalTest = () => import('./view/vocational-test.vue');
 const VocationalResults = () => import('./view/vocational-results.vue');
 
