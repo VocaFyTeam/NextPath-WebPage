@@ -1,8 +1,4 @@
-/**
- * Application service store for the Community bounded context (student forum).
- *
- * @module useCommunityStore
- */
+
 import { defineStore } from 'pinia';
 import { computed, ref } from 'vue';
 import { CommunityApi } from '../infrastructure/community-api.js';
@@ -17,11 +13,9 @@ export const useCommunityStore = defineStore('community', () => {
     const communities = ref([]);
     const threads = ref([]);
     const comments = ref([]);
-    /** Community used to filter the threads (null = all of my communities). */
     const selectedCommunityId = ref(null);
     const errors = ref([]);
 
-    /** @param {string} studentId @returns {import('../domain/model/community.entity.js').Community[]} */
     function myCommunities(studentId) {
         return communities.value.filter(community => community.hasMember(studentId));
     }
@@ -43,12 +37,10 @@ export const useCommunityStore = defineStore('community', () => {
         }
     }
 
-    /** @param {?string} communityId - Toggles the community filter. */
     function selectCommunity(communityId) {
         selectedCommunityId.value = selectedCommunityId.value === communityId ? null : communityId;
     }
 
-    /** @param {string} threadId */
     async function fetchComments(threadId) {
         comments.value = [];
         try {
@@ -59,12 +51,6 @@ export const useCommunityStore = defineStore('community', () => {
         }
     }
 
-    /**
-     * Publishes a comment and increments the thread counter.
-     * @param {string} threadId
-     * @param {string} authorName
-     * @param {string} content
-     */
     async function addComment(threadId, authorName, content) {
         const text = (content ?? '').trim();
         if (!text) return;
