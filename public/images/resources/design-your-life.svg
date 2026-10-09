@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 160">
+  <rect width="120" height="160" fill="#4f7f8c"/>
+  <text x="60" y="34" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#ffffff">DISEÑA</text>
+  <text x="60" y="50" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#ffffff">TU VIDA</text>
+  <g fill="none" stroke="#c9e4e3" stroke-width="2">
+    <path d="M30 95 C 45 70, 75 70, 90 95"/><path d="M30 95 C 45 120, 75 120, 90 95"/>
+    <circle cx="60" cy="95" r="6" fill="#e9b949" stroke="none"/>
+  </g>
+  <text x="60" y="140" text-anchor="middle" font-family="Arial" font-size="6" fill="#e6f4f3">Ficha de lectura · NextPath</text>
+</svg>
