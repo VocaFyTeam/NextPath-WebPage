@@ -1,15 +1,14 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
-import { useI18n } from 'vue-i18n';
 import { useIamStore } from '../../../iam/application/iam.store.js';
 import { useVocationalAssessmentStore } from '../../application/vocational-assessments.store.js';
 import { useCareerExplorationStore } from '../../../carrer-exploration/application/career-exploration.store.js';
-import { DIMENSION_CODES } from '../../domain/model/affinity-profile.js';
-import AffinityRadarChart from '../../presentation/components/affinity-radar-chart.vue';
+import { useResultInterpretation } from '../../application/use-result-interpretation.js';
+import AffinityRadarChart from '../components/affinity-radar-chart.vue';
 
 const route = useRoute();
-const { t } = useI18n();
+const { studentFeedback } = useResultInterpretation();
 const iamStore = useIamStore();
 const store = useVocationalAssessmentStore();
 const careerStore = useCareerExplorationStore();
@@ -24,23 +23,11 @@ onMounted(async () => {
 });
 
 const test = computed(() => (result.value ? store.getTestById(result.value.testId) : null));
-const dominant = computed(() => result.value?.profile.dominantDimensions(2) ?? []);
 
 const recommendedCareers = computed(() =>
     (result.value?.topCareerIds(3) ?? []).map(id => careerStore.getCareerById(id)).filter(Boolean));
 
-const interpretation = computed(() => {
-  if (dominant.value.length < 2) return [];
-  const [first, second] = dominant.value;
-  return [
-    t('results.interpretationIntro', {
-      first: t(`dimensions.${first}.name`), firstCode: DIMENSION_CODES[first],
-      second: t(`dimensions.${second}.name`), secondCode: DIMENSION_CODES[second],
-      code: result.value.profile.hollandCode
-    }),
-    `${t(`dimensions.${first}.trait`)} ${t(`dimensions.${second}.complement`)}`
-  ];
-});
+const interpretation = computed(() => (result.value ? studentFeedback(result.value.profile) : []));
 
 function downloadReport() {
   window.print();

@@ -1,15 +1,10 @@
 <script setup>
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
-import { AFFINITY_DIMENSIONS } from '../../domain/model/affinity-profile.js';
+import {AFFINITY_DIMENSIONS} from "../../domain/model/affinity-profile.js";
 
-/**
- * Radar ("Diagrama de afinidad") drawn with plain SVG.
- * Axes are drawn clockwise starting at the top, in AFFINITY_DIMENSIONS order.
- */
 
 const props = defineProps({
-  /** @type {import('../../domain/model/affinity-profile.js').AffinityProfile} */
   profile: { type: Object, required: true }
 });
 
