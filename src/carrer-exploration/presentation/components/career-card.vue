@@ -1,38 +1,17 @@
 <script setup>
-import { computed } from 'vue'
 
-const props = defineProps({
+defineProps({
   career: { type: Object, required: true },
   selectable: { type: Boolean, default: false },
   selected: { type: Boolean, default: false }
-})
-
-const emit = defineEmits(['toggle-select'])
-
-const careerImageUrl = computed(() => {
-  const imageUrl = props.career.imageUrl
-
-  if (!imageUrl) return ''
-
-  // Keep external image URLs unchanged.
-  if (/^(https?:)?\/\//i.test(imageUrl) || imageUrl.startsWith('data:')) {
-    return imageUrl
-  }
-
-  // Remove legacy prefixes and leading slashes.
-  const cleanPath = imageUrl
-      .replace(/^\/public\//, '')
-      .replace(/^public\//, '')
-      .replace(/^\/+/, '')
-
-  return `${import.meta.env.BASE_URL}${cleanPath}`
-})
+});
+const emit = defineEmits(['toggle-select']);
 </script>
 
 <template>
   <article class="career-card" :class="{ 'is-selected': selected }">
     <div class="career-card__media">
-      <img :src="careerImageUrl" :alt="career.name" loading="lazy" />
+      <img :src="career.imageUrl" :alt="career.name" loading="lazy" />
       <button
           v-if="selectable"
           type="button"

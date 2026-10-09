@@ -1,9 +1,14 @@
 <script setup>
 import { computed, nextTick, ref, watch } from 'vue';
 
-
+/**
+ * Chat area shared by the student (mock-up 11) and psychologist (mock-up 16) views.
+ * Own messages are shown on the right (dark), the other participant's on the left (teal).
+ */
 const props = defineProps({
+  /** @type {import('../../domain/model/conversation.entity.js').Conversation} */
   conversation: { type: Object, required: true },
+  /** @type {import('../../domain/model/message.entity.js').Message[]} */
   messages: { type: Array, required: true },
   viewerRole: { type: String, required: true },
   viewerAvatar: { type: String, default: '' }

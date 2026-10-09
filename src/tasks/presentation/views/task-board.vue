@@ -9,6 +9,7 @@ const tasksStore = useTasksStore();
 const assessmentStore = useVocationalAssessmentStore();
 const loading = ref(true);
 
+/** Evolution history in chronological order (oldest first). */
 const history = computed(() => [...assessmentStore.sortedResults].reverse());
 
 onMounted(async () => {
@@ -17,6 +18,7 @@ onMounted(async () => {
   loading.value = false;
 });
 
+/** @param {import('../../../../../../Aplicaciones Web/nextpath/src/assessments/domain/model/test-result.entity.js').TestResult} result */
 function reportRoute(result) {
   return result.isCompleted
       ? { name: 'vocational-results', params: { resultId: result.id } }

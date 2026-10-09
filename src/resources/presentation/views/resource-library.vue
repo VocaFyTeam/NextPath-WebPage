@@ -7,7 +7,6 @@ import { useResourcesStore } from '../../application/resources.store.js';
 import { useMonitoringStore } from '../../../monitoring/application/monitoring.store.js';
 import { useMessagingStore } from '../../../counseling/application/messaging.store.js';
 
-/** "Biblioteca de recursos" of the psychologist (mock-up 17). */
 const { t } = useI18n();
 const toast = useToast();
 const iamStore = useIamStore();
