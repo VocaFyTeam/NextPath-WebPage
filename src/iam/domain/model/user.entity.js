@@ -1,3 +1,5 @@
+import { assetUrl } from '../../../shared/infrastructure/asset-url.js';
+
 
 export class User {
 
@@ -7,7 +9,7 @@ export class User {
         this.lastName = lastName;
         this.email = email;
         this.role = role;
-        this.avatarUrl = avatarUrl || User.defaultAvatarFor(role);
+        this.avatarUrl = assetUrl(avatarUrl || User.defaultAvatarFor(role));
     }
 
     get fullName() {
@@ -25,6 +27,7 @@ export class User {
     get isPsychologist() {
         return this.role === 'psychologist';
     }
+
 
     static defaultAvatarFor(role) {
         return role === 'psychologist' ? '/images/avatars/psychologist.svg' : '/images/avatars/student.svg';

@@ -1,3 +1,5 @@
+import { assetUrl } from '../../../shared/infrastructure/asset-url.js';
+
 /**
  * Direct-message conversation between a student and a psychologist.
  *
@@ -15,16 +17,16 @@ export class Conversation {
      * @param {string} [params.avatarUrl=''] - Psychologist avatar.
      */
     constructor({
-                    id = null, studentId = null, studentName = '', studentAvatarUrl = '',
-                    psychologistId = null, psychologistName = '', avatarUrl = ''
-                } = {}) {
+        id = null, studentId = null, studentName = '', studentAvatarUrl = '',
+        psychologistId = null, psychologistName = '', avatarUrl = ''
+    } = {}) {
         this.id = id;
         this.studentId = studentId;
         this.studentName = studentName;
-        this.studentAvatarUrl = studentAvatarUrl || '/images/avatars/student.svg';
+        this.studentAvatarUrl = assetUrl(studentAvatarUrl || '/images/avatars/student.svg');
         this.psychologistId = psychologistId;
         this.psychologistName = psychologistName;
-        this.avatarUrl = avatarUrl || '/images/avatars/psychologist.svg';
+        this.avatarUrl = assetUrl(avatarUrl || '/images/avatars/psychologist.svg');
     }
 
     /**

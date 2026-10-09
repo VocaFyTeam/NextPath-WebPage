@@ -1,5 +1,8 @@
+import { assetUrl } from '../../../shared/infrastructure/asset-url.js';
+
 
 const soles = amount => `S/ ${Number(amount).toLocaleString('en-US')}`;
+
 
 export class Career {
 
@@ -15,7 +18,7 @@ export class Career {
         this.name = name;
         this.emoji = emoji;
         this.area = area;
-        this.imageUrl = imageUrl;
+        this.imageUrl = assetUrl(imageUrl);
         this.shortDescription = shortDescription;
         this.description = description;
         this.durationYears = durationYears;

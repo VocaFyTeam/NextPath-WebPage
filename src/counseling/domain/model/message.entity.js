@@ -1,3 +1,5 @@
+import { assetUrl } from '../../../shared/infrastructure/asset-url.js';
+
 /**
  * Message inside a {@link Conversation}. It may carry a shared vocational resource.
  *
@@ -21,7 +23,9 @@ export class Message {
         this.text = text;
         this.sentAt = sentAt || new Date().toISOString();
         this.read = read;
-        this.attachment = attachment;
+        this.attachment = attachment
+            ? { ...attachment, coverUrl: assetUrl(attachment.coverUrl), fileUrl: assetUrl(attachment.fileUrl) }
+            : null;
     }
 
     /** @returns {boolean} Whether the message was sent by the student. */

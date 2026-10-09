@@ -1,3 +1,4 @@
+import { assetPath } from '../../shared/infrastructure/asset-url.js';
 import { Message } from '../domain/model/message.entity.js';
 import { extractResources } from '../../shared/infrastructure/base-assembler.js';
 
@@ -25,7 +26,11 @@ export class MessageAssembler {
             text: entity.text,
             sentAt: entity.sentAt,
             read: entity.read,
-            ...(entity.attachment ? { attachment: entity.attachment } : {})
+            ...(entity.attachment ? { attachment: {
+                ...entity.attachment,
+                coverUrl: assetPath(entity.attachment.coverUrl),
+                fileUrl: assetPath(entity.attachment.fileUrl)
+            } } : {})
         };
     }
 }
