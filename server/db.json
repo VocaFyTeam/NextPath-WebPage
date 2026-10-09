@@ -1,0 +1,2724 @@
+{
+  "users": [
+    {
+      "id": "std-101",
+      "firstName": "Joaquín",
+      "lastName": "Silva",
+      "email": "joaquin@nextpath.com",
+      "password": "123456",
+      "role": "student",
+      "avatarUrl": "/images/avatars/student.svg"
+    },
+    {
+      "id": "psy-201",
+      "firstName": "Ernesto",
+      "lastName": "Silva",
+      "email": "ernesto.silva@nextpath.com",
+      "password": "123456",
+      "role": "psychologist",
+      "avatarUrl": "/images/avatars/psychologist.svg"
+    },
+    {
+      "id": "psy-202",
+      "firstName": "Silvia",
+      "lastName": "Ramos",
+      "email": "silvia.ramos@nextpath.com",
+      "password": "123456",
+      "role": "psychologist",
+      "avatarUrl": "/images/avatars/psychologist.svg"
+    },
+    {
+      "id": "psy-203",
+      "firstName": "Diego",
+      "lastName": "Torres",
+      "email": "diego.torres@nextpath.com",
+      "password": "123456",
+      "role": "psychologist",
+      "avatarUrl": "/images/avatars/psychologist.svg"
+    },
+    {
+      "id": "std-102",
+      "firstName": "Camila",
+      "lastName": "Torres",
+      "email": "camila@nextpath.com",
+      "password": "123456",
+      "role": "student",
+      "avatarUrl": "/images/avatars/student.svg"
+    },
+    {
+      "id": "std-103",
+      "firstName": "Sebastián",
+      "lastName": "Rivas",
+      "email": "sebastian@nextpath.com",
+      "password": "123456",
+      "role": "student",
+      "avatarUrl": "/images/avatars/student.svg"
+    },
+    {
+      "id": "std-104",
+      "firstName": "Valeria",
+      "lastName": "Mendoza",
+      "email": "valeria@nextpath.com",
+      "password": "123456",
+      "role": "student",
+      "avatarUrl": "/images/avatars/student.svg"
+    },
+    {
+      "id": "std-105",
+      "firstName": "Diego",
+      "lastName": "Fernández",
+      "email": "diego@nextpath.com",
+      "password": "123456",
+      "role": "student",
+      "avatarUrl": "/images/avatars/student.svg"
+    },
+    {
+      "id": "std-106",
+      "firstName": "Lucía",
+      "lastName": "Paredes",
+      "email": "lucia@nextpath.com",
+      "password": "123456",
+      "role": "student",
+      "avatarUrl": "/images/avatars/student.svg"
+    }
+  ],
+  "vocational-tests": [
+    {
+      "id": "1",
+      "title": "Test NextPath(IA)",
+      "shortName": "Test IA NextPath",
+      "type": "open",
+      "featured": true,
+      "order": 1,
+      "version": "1.0",
+      "durationMinutes": 15,
+      "headline": "TEST VOCACIONAL NEXT PATH(IA)",
+      "instructions": "Responde las siguientes preguntas abiertas con sinceridad. La IA procesará tus respuestas para crear tu perfil.",
+      "description": "Evaluación inteligente adaptativa que analiza tus respuestas en tiempo real para generar un perfil de afinidad vocacional preciso y recomendaciones personalizadas de carrera."
+    },
+    {
+      "id": "2",
+      "title": "Test de Holland",
+      "shortName": "Test Holland",
+      "type": "choice",
+      "featured": false,
+      "order": 2,
+      "version": "2.0",
+      "durationMinutes": 20,
+      "headline": "TEST DE HOLLAND",
+      "instructions": "Elige la opción con la que más te identificas en cada situación.",
+      "description": "Evalúa tus intereses vocacionales en 6 áreas clave: Realista, Investigador, Artístico, Social, Emprendedor y Convencional."
+    },
+    {
+      "id": "3",
+      "title": "Test de Aptitudes Diferenciales",
+      "shortName": "Test Aptitudes diferenciales",
+      "type": "choice",
+      "featured": false,
+      "order": 3,
+      "version": "1.0",
+      "durationMinutes": 25,
+      "headline": "TEST DE APTITUDES DIFERENCIALES",
+      "instructions": "Selecciona la tarea que te resulta más sencilla de resolver.",
+      "description": "Mide tus capacidades de razonamiento verbal, numérico, espacial y abstracto para identificar tus principales fortalezas intelectuales."
+    },
+    {
+      "id": "4",
+      "title": "16Personalities",
+      "shortName": "Test 16Personalities",
+      "type": "choice",
+      "featured": false,
+      "order": 4,
+      "version": "1.0",
+      "durationMinutes": 12,
+      "headline": "TEST 16PERSONALITIES",
+      "instructions": "Elige la afirmación que mejor describe cómo actúas normalmente.",
+      "description": "Descubre tu tipo de personalidad de 4 letras para comprender cómo tomas decisiones y te relacionas en ambientes de trabajo."
+    },
+    {
+      "id": "5",
+      "title": "Test de Kuder",
+      "shortName": "Test Kuder",
+      "type": "choice",
+      "featured": false,
+      "order": 5,
+      "version": "1.0",
+      "durationMinutes": 18,
+      "headline": "TEST DE KUDER",
+      "instructions": "Indica qué actividad preferirías realizar en cada grupo.",
+      "description": "Analiza tus preferencias ocupacionales en áreas de servicio social, persuasivo, literario, musical y gestión administrativa."
+    }
+  ],
+  "test-questions": [
+    {
+      "id": "1",
+      "testId": "1",
+      "order": 1,
+      "type": "open",
+      "text": "¿Qué tipo de actividades disfrutas hacer en tu tiempo libre y por qué te gustan?",
+      "area": "artistic",
+      "placeholder": "Escribe tu respuesta aquí...",
+      "options": []
+    },
+    {
+      "id": "2",
+      "testId": "1",
+      "order": 2,
+      "type": "open",
+      "text": "Describe un proyecto o trabajo escolar del que te sientas orgulloso. ¿Qué rol cumpliste en él?",
+      "area": "enterprising",
+      "placeholder": "Escribe tu respuesta aquí...",
+      "options": []
+    },
+    {
+      "id": "3",
+      "testId": "1",
+      "order": 3,
+      "type": "open",
+      "text": "Si pudieras resolver un problema de tu comunidad, ¿cuál sería y cómo lo harías?",
+      "area": "social",
+      "placeholder": "Escribe tu respuesta aquí...",
+      "options": []
+    },
+    {
+      "id": "4",
+      "testId": "1",
+      "order": 4,
+      "type": "open",
+      "text": "¿Qué cursos del colegio te resultan más interesantes o fáciles? ¿Por qué?",
+      "area": "investigative",
+      "placeholder": "Escribe tu respuesta aquí...",
+      "options": []
+    },
+    {
+      "id": "5",
+      "testId": "1",
+      "order": 5,
+      "type": "open",
+      "text": "Imagina tu día ideal de trabajo dentro de 10 años. ¿Qué estás haciendo y dónde?",
+      "area": "artistic",
+      "placeholder": "Escribe tu respuesta aquí...",
+      "options": []
+    },
+    {
+      "id": "6",
+      "testId": "1",
+      "order": 6,
+      "type": "open",
+      "text": "¿Prefieres trabajar solo o en equipo? Cuéntanos una experiencia que lo demuestre.",
+      "area": "social",
+      "placeholder": "Escribe tu respuesta aquí...",
+      "options": []
+    },
+    {
+      "id": "7",
+      "testId": "2",
+      "order": 1,
+      "type": "choice",
+      "text": "¿Qué actividad preferirías realizar un sábado por la mañana?",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Diseñar el afiche de un evento",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Ayudar como voluntario en tu comunidad",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Investigar cómo funciona un aparato",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Organizar una feria y conseguir auspiciadores",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Ordenar y clasificar tu biblioteca personal",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "testId": "2",
+      "order": 2,
+      "type": "choice",
+      "text": "En un trabajo grupal, ¿qué rol asumes con más naturalidad?",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Encargarme de la presentación visual",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Mediar y escuchar a todos",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Buscar y analizar la información",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Liderar y repartir las tareas",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Revisar formato, fechas y entregables",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "testId": "2",
+      "order": 3,
+      "type": "choice",
+      "text": "¿Qué sección de una revista leerías primero?",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Arte, diseño y fotografía",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Historias de personas que ayudan a otros",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Ciencia y tecnología",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Negocios y emprendimiento",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Finanzas personales",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "testId": "2",
+      "order": 4,
+      "type": "choice",
+      "text": "¿Qué te gustaría que digan de tu trabajo?",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Que es original y creativo",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Que mejora la vida de las personas",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Que es riguroso y bien fundamentado",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Que genera resultados e impacto",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Que es ordenado y confiable",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "testId": "2",
+      "order": 5,
+      "type": "choice",
+      "text": "¿Qué entorno de trabajo prefieres?",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Un estudio creativo",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Un colegio o centro comunitario",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Un laboratorio",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Una startup en crecimiento",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Una oficina bien organizada",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "testId": "3",
+      "order": 1,
+      "type": "choice",
+      "text": "¿Qué tipo de ejercicio resuelves con mayor facilidad?",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Rotar mentalmente figuras en 3D",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Comprender textos y emociones de personajes",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Encontrar el patrón en una serie de números",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Argumentar para convencer a otros",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Detectar errores en una tabla de datos",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "testId": "3",
+      "order": 2,
+      "type": "choice",
+      "text": "Cuando estudias, ¿qué estrategia te funciona mejor?",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Mapas visuales y esquemas de colores",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Explicar el tema a un compañero",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Resolver muchos ejercicios",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Debatir en grupo",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Resúmenes ordenados y fichas",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "testId": "3",
+      "order": 3,
+      "type": "choice",
+      "text": "¿En qué tipo de prueba sueles obtener mejores resultados?",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Dibujo técnico y razonamiento espacial",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Comprensión lectora",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Matemática y lógica",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Exposiciones orales",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Ortografía y precisión",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "testId": "3",
+      "order": 4,
+      "type": "choice",
+      "text": "Ante un problema nuevo, tu primera reacción es…",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Imaginar soluciones poco comunes",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Preguntar a quién afecta y cómo se siente",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Descomponerlo en partes y analizarlo",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Decidir rápido y actuar",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Seguir un procedimiento paso a paso",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "testId": "3",
+      "order": 5,
+      "type": "choice",
+      "text": "¿Qué habilidad te gustaría seguir desarrollando?",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Ilustración digital",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Comunicación empática",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Programación y análisis",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Negociación",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Gestión de información",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "testId": "4",
+      "order": 1,
+      "type": "choice",
+      "text": "En una reunión social, normalmente…",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Observo detalles y busco inspiración",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Converso con muchas personas",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Me quedo en conversaciones profundas",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Propongo planes al grupo",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Prefiero que todo esté planificado",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "testId": "4",
+      "order": 2,
+      "type": "choice",
+      "text": "Cuando tomas una decisión importante, priorizas…",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Lo que te hace sentir auténtico",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "El bienestar de los demás",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "La lógica y los datos",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "La oportunidad y el riesgo",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Las reglas y la estabilidad",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "testId": "4",
+      "order": 3,
+      "type": "choice",
+      "text": "Tu forma de organizar tus tareas es…",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Flexible e intuitiva",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Coordinada con otras personas",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Por prioridad según su complejidad",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Por metas y resultados",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Con agenda y listas detalladas",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "testId": "4",
+      "order": 4,
+      "type": "choice",
+      "text": "¿Qué te motiva más en un proyecto?",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Expresar ideas nuevas",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Trabajar con un buen equipo",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Aprender algo complejo",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Ganar y destacar",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Terminarlo sin errores",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "testId": "4",
+      "order": 5,
+      "type": "choice",
+      "text": "Tus amigos te describirían como…",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Creativo",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Empático",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Curioso",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Líder",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Responsable",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "testId": "5",
+      "order": 1,
+      "type": "choice",
+      "text": "¿Qué actividad preferirías?",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Componer música o escribir historias",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Enseñar a niños",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Hacer experimentos",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Vender un producto propio",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Llevar la contabilidad de un negocio",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "testId": "5",
+      "order": 2,
+      "type": "choice",
+      "text": "Si trabajaras en una empresa, elegirías el área de…",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Diseño y marca",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Recursos humanos",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Investigación y desarrollo",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Ventas y marketing",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Administración y finanzas",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "testId": "5",
+      "order": 3,
+      "type": "choice",
+      "text": "¿Qué curso extracurricular tomarías?",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Fotografía",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Primeros auxilios",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Robótica",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Oratoria",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Excel avanzado",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "testId": "5",
+      "order": 4,
+      "type": "choice",
+      "text": "¿Qué te resulta más satisfactorio?",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Ver terminada una obra propia",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Recibir el agradecimiento de alguien",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Resolver un problema difícil",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Cerrar un buen trato",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Ver todo ordenado y al día",
+          "area": "conventional"
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "testId": "5",
+      "order": 5,
+      "type": "choice",
+      "text": "¿Qué tipo de voluntariado elegirías?",
+      "area": null,
+      "placeholder": "",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Pintar murales en el barrio",
+          "area": "artistic"
+        },
+        {
+          "id": "o2",
+          "text": "Acompañar a adultos mayores",
+          "area": "social"
+        },
+        {
+          "id": "o3",
+          "text": "Medir la calidad del agua",
+          "area": "investigative"
+        },
+        {
+          "id": "o4",
+          "text": "Organizar una colecta",
+          "area": "enterprising"
+        },
+        {
+          "id": "o5",
+          "text": "Registrar donaciones e inventario",
+          "area": "conventional"
+        }
+      ]
+    }
+  ],
+  "test-results": [
+    {
+      "id": "1",
+      "studentId": "std-101",
+      "testId": "1",
+      "date": "2026-09-11",
+      "version": "1.0",
+      "status": "completed",
+      "summary": "Creación de perfil de intereses",
+      "scores": {
+        "artistic": 92,
+        "social": 74,
+        "investigative": 58,
+        "enterprising": 48,
+        "conventional": 36
+      },
+      "careerMatches": [
+        {
+          "careerId": "1",
+          "compatibility": 92
+        },
+        {
+          "careerId": "2",
+          "compatibility": 88
+        },
+        {
+          "careerId": "3",
+          "compatibility": 86
+        },
+        {
+          "careerId": "4",
+          "compatibility": 84
+        },
+        {
+          "careerId": "5",
+          "compatibility": 78
+        },
+        {
+          "careerId": "6",
+          "compatibility": 64
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "2",
+      "studentId": "std-101",
+      "testId": "2",
+      "date": "2026-09-12",
+      "version": "2.0",
+      "status": "completed",
+      "summary": "Perfil Holland: Artístico - Social",
+      "scores": {
+        "artistic": 88,
+        "social": 70,
+        "investigative": 60,
+        "enterprising": 52,
+        "conventional": 40
+      },
+      "careerMatches": [
+        {
+          "careerId": "1",
+          "compatibility": 92
+        },
+        {
+          "careerId": "2",
+          "compatibility": 88
+        },
+        {
+          "careerId": "3",
+          "compatibility": 86
+        },
+        {
+          "careerId": "4",
+          "compatibility": 84
+        },
+        {
+          "careerId": "5",
+          "compatibility": 77
+        },
+        {
+          "careerId": "6",
+          "compatibility": 66
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "3",
+      "studentId": "std-101",
+      "testId": "3",
+      "date": "2026-09-21",
+      "version": "1.0",
+      "status": "pending",
+      "summary": "Evaluación en progreso",
+      "scores": {},
+      "careerMatches": [],
+      "answers": []
+    },
+    {
+      "id": "4",
+      "studentId": "std-102",
+      "testId": "1",
+      "date": "2026-09-15",
+      "version": "1.0",
+      "status": "completed",
+      "summary": "Perfil Social - Artístico",
+      "scores": {
+        "artistic": 72,
+        "social": 90,
+        "investigative": 60,
+        "enterprising": 55,
+        "conventional": 45
+      },
+      "careerMatches": [
+        {
+          "careerId": "4",
+          "compatibility": 93
+        },
+        {
+          "careerId": "5",
+          "compatibility": 90
+        },
+        {
+          "careerId": "2",
+          "compatibility": 86
+        },
+        {
+          "careerId": "3",
+          "compatibility": 86
+        },
+        {
+          "careerId": "1",
+          "compatibility": 82
+        },
+        {
+          "careerId": "6",
+          "compatibility": 74
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "5",
+      "studentId": "std-102",
+      "testId": "2",
+      "date": "2026-09-21",
+      "version": "2.0",
+      "status": "completed",
+      "summary": "Perfil Holland: Social - Artístico",
+      "scores": {
+        "artistic": 70,
+        "social": 88,
+        "investigative": 62,
+        "enterprising": 54,
+        "conventional": 46
+      },
+      "careerMatches": [
+        {
+          "careerId": "4",
+          "compatibility": 93
+        },
+        {
+          "careerId": "5",
+          "compatibility": 90
+        },
+        {
+          "careerId": "2",
+          "compatibility": 86
+        },
+        {
+          "careerId": "3",
+          "compatibility": 86
+        },
+        {
+          "careerId": "1",
+          "compatibility": 82
+        },
+        {
+          "careerId": "6",
+          "compatibility": 75
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "6",
+      "studentId": "std-102",
+      "testId": "5",
+      "date": "2026-09-25",
+      "version": "1.0",
+      "status": "completed",
+      "summary": "Preferencia por servicio social",
+      "scores": {
+        "artistic": 68,
+        "social": 86,
+        "investigative": 58,
+        "enterprising": 60,
+        "conventional": 44
+      },
+      "careerMatches": [
+        {
+          "careerId": "4",
+          "compatibility": 94
+        },
+        {
+          "careerId": "5",
+          "compatibility": 88
+        },
+        {
+          "careerId": "2",
+          "compatibility": 86
+        },
+        {
+          "careerId": "3",
+          "compatibility": 85
+        },
+        {
+          "careerId": "1",
+          "compatibility": 82
+        },
+        {
+          "careerId": "6",
+          "compatibility": 74
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "7",
+      "studentId": "std-102",
+      "testId": "4",
+      "date": "2026-09-28",
+      "version": "1.0",
+      "status": "completed",
+      "summary": "Personalidad ENFJ",
+      "scores": {
+        "artistic": 66,
+        "social": 90,
+        "investigative": 57,
+        "enterprising": 58,
+        "conventional": 48
+      },
+      "careerMatches": [
+        {
+          "careerId": "4",
+          "compatibility": 92
+        },
+        {
+          "careerId": "5",
+          "compatibility": 89
+        },
+        {
+          "careerId": "2",
+          "compatibility": 85
+        },
+        {
+          "careerId": "3",
+          "compatibility": 83
+        },
+        {
+          "careerId": "1",
+          "compatibility": 81
+        },
+        {
+          "careerId": "6",
+          "compatibility": 74
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "8",
+      "studentId": "std-104",
+      "testId": "5",
+      "date": "2026-10-05",
+      "version": "1.0",
+      "status": "completed",
+      "summary": "Preferencia persuasiva",
+      "scores": {
+        "artistic": 58,
+        "social": 62,
+        "investigative": 50,
+        "enterprising": 76,
+        "conventional": 66
+      },
+      "careerMatches": [
+        {
+          "careerId": "2",
+          "compatibility": 83
+        },
+        {
+          "careerId": "4",
+          "compatibility": 83
+        },
+        {
+          "careerId": "6",
+          "compatibility": 80
+        },
+        {
+          "careerId": "1",
+          "compatibility": 79
+        },
+        {
+          "careerId": "3",
+          "compatibility": 79
+        },
+        {
+          "careerId": "5",
+          "compatibility": 76
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "9",
+      "studentId": "std-105",
+      "testId": "1",
+      "date": "2026-09-10",
+      "version": "1.0",
+      "status": "completed",
+      "summary": "Perfil Investigador - Convencional",
+      "scores": {
+        "artistic": 46,
+        "social": 40,
+        "investigative": 92,
+        "enterprising": 58,
+        "conventional": 70
+      },
+      "careerMatches": [
+        {
+          "careerId": "6",
+          "compatibility": 98
+        },
+        {
+          "careerId": "3",
+          "compatibility": 83
+        },
+        {
+          "careerId": "2",
+          "compatibility": 75
+        },
+        {
+          "careerId": "5",
+          "compatibility": 75
+        },
+        {
+          "careerId": "4",
+          "compatibility": 73
+        },
+        {
+          "careerId": "1",
+          "compatibility": 69
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "10",
+      "studentId": "std-105",
+      "testId": "2",
+      "date": "2026-09-14",
+      "version": "2.0",
+      "status": "completed",
+      "summary": "Perfil Holland: Investigador",
+      "scores": {
+        "artistic": 44,
+        "social": 42,
+        "investigative": 90,
+        "enterprising": 60,
+        "conventional": 72
+      },
+      "careerMatches": [
+        {
+          "careerId": "6",
+          "compatibility": 96
+        },
+        {
+          "careerId": "3",
+          "compatibility": 82
+        },
+        {
+          "careerId": "2",
+          "compatibility": 75
+        },
+        {
+          "careerId": "5",
+          "compatibility": 75
+        },
+        {
+          "careerId": "4",
+          "compatibility": 74
+        },
+        {
+          "careerId": "1",
+          "compatibility": 69
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "11",
+      "studentId": "std-105",
+      "testId": "3",
+      "date": "2026-10-01",
+      "version": "1.0",
+      "status": "completed",
+      "summary": "Fortaleza en razonamiento numérico",
+      "scores": {
+        "artistic": 48,
+        "social": 40,
+        "investigative": 94,
+        "enterprising": 56,
+        "conventional": 68
+      },
+      "careerMatches": [
+        {
+          "careerId": "6",
+          "compatibility": 98
+        },
+        {
+          "careerId": "3",
+          "compatibility": 84
+        },
+        {
+          "careerId": "2",
+          "compatibility": 76
+        },
+        {
+          "careerId": "5",
+          "compatibility": 76
+        },
+        {
+          "careerId": "4",
+          "compatibility": 73
+        },
+        {
+          "careerId": "1",
+          "compatibility": 70
+        }
+      ],
+      "answers": []
+    },
+    {
+      "id": "12",
+      "studentId": "std-106",
+      "testId": "1",
+      "date": "2026-09-30",
+      "version": "1.0",
+      "status": "completed",
+      "summary": "Perfil Social - Investigador",
+      "scores": {
+        "artistic": 50,
+        "social": 92,
+        "investigative": 72,
+        "enterprising": 48,
+        "conventional": 40
+      },
+      "careerMatches": [
+        {
+          "careerId": "5",
+          "compatibility": 98
+        },
+        {
+          "careerId": "4",
+          "compatibility": 86
+        },
+        {
+          "careerId": "3",
+          "compatibility": 81
+        },
+        {
+          "careerId": "6",
+          "compatibility": 78
+        },
+        {
+          "careerId": "1",
+          "compatibility": 77
+        },
+        {
+          "careerId": "2",
+          "compatibility": 77
+        }
+      ],
+      "answers": []
+    }
+  ],
+  "careers": [
+    {
+      "id": "1",
+      "name": "Diseño Gráfico",
+      "emoji": "\ud83c\udfa8",
+      "area": "Diseño y Arte",
+      "imageUrl": "/images/careers/graphic-design.jpg",
+      "shortDescription": "Creación de identidades visuales y material publicitario.",
+      "description": "Forma profesionales capaces de comunicar ideas visualmente a través de imágenes, tipografía y medios digitales.",
+      "durationYears": 5,
+      "durationLabel": "5 años (Licenciatura)",
+      "semesters": 10,
+      "modality": "Presencial",
+      "modalityDetail": "Presencial / Remoto",
+      "universities": [
+        {
+          "name": "Universidad Peruana de Ciencias Aplicadas",
+          "acronym": "UPC",
+          "studyPlanUrl": "https://www.upc.edu.pe/"
+        },
+        {
+          "name": "Pontificia Universidad Católica del Perú",
+          "acronym": "PUCP",
+          "studyPlanUrl": "https://www.pucp.edu.pe/"
+        },
+        {
+          "name": "Universidad San Ignacio de Loyola",
+          "acronym": "USIL",
+          "studyPlanUrl": "https://usil.edu.pe/"
+        }
+      ],
+      "fieldOfWork": [
+        "Agencias de publicidad",
+        "Estudios de diseño y branding",
+        "Medios de comunicación y editoriales"
+      ],
+      "mainField": "Agencias, UX/UI, Branding",
+      "skills": [
+        "Creatividad",
+        "Manejo de software de diseño",
+        "Conocimiento de teoría del color",
+        "Trabajo colaborativo"
+      ],
+      "averageSalary": {
+        "min": 980,
+        "max": 3000
+      },
+      "salaryRange": {
+        "min": 1200,
+        "max": 4500
+      },
+      "employabilityRate": 85,
+      "demandLevel": "Alta",
+      "baseCompatibility": 80,
+      "profile": {
+        "artistic": 95,
+        "social": 55,
+        "investigative": 45,
+        "enterprising": 50,
+        "conventional": 35
+      },
+      "projection": [
+        {
+          "period": "Año 1 - 2",
+          "role": "Diseñador Junior",
+          "salary": "S/ 2200 - S/ 3200"
+        },
+        {
+          "period": "Año 3 - 5",
+          "role": "Diseñador UX / UI Senior",
+          "salary": "S/ 4500 - S/ 6000"
+        },
+        {
+          "period": "Año 5 - 8",
+          "role": "Diseñador Creativo / Lead UX",
+          "salary": "S/ 7500 - S/ 10000"
+        },
+        {
+          "period": "Año 8+",
+          "role": "Consultor & Emprendedor Digital",
+          "salary": "S/ 12000+"
+        }
+      ],
+      "recommendations": [
+        "Refuerza dominio de herramientas Figma y Suite Adobe durante el año 1 - 2.",
+        "Participa en talleres de Comunicación Persuasiva para elevar tu nivel Senior.",
+        "Lleva cursos electivos en Gestión de Proyectos Digitales e Inteligencia Artificial."
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Diseño de Interiores",
+      "emoji": "\ud83c\udfe2",
+      "area": "Diseño y Arte",
+      "imageUrl": "/images/careers/interior-design.jpg",
+      "shortDescription": "Planeación de espacios funcionales y estéticos.",
+      "description": "Prepara profesionales para proyectar espacios interiores que combinan funcionalidad, confort y estética.",
+      "durationYears": 5,
+      "durationLabel": "5 años (10 Semestres)",
+      "semesters": 10,
+      "modality": "Presencial",
+      "modalityDetail": "Presencial",
+      "universities": [
+        {
+          "name": "Universidad Peruana de Ciencias Aplicadas",
+          "acronym": "UPC",
+          "studyPlanUrl": "https://www.upc.edu.pe/"
+        },
+        {
+          "name": "Universidad de Ciencias y Artes de América Latina",
+          "acronym": "UCAL",
+          "studyPlanUrl": "https://www.ucal.edu.pe/"
+        },
+        {
+          "name": "Toulouse Lautrec",
+          "acronym": "Toulouse",
+          "studyPlanUrl": "https://www.tls.edu.pe/"
+        }
+      ],
+      "fieldOfWork": [
+        "Estudios de arquitectura",
+        "Constructoras e inmobiliarias",
+        "Diseño de mobiliario"
+      ],
+      "mainField": "Estudios, Arquitectura",
+      "skills": [
+        "Visión espacial",
+        "Dibujo técnico y modelado 3D",
+        "Sensibilidad estética",
+        "Gestión de clientes"
+      ],
+      "averageSalary": {
+        "min": 1100,
+        "max": 3200
+      },
+      "salaryRange": {
+        "min": 1500,
+        "max": 4800
+      },
+      "employabilityRate": 78,
+      "demandLevel": "Media",
+      "baseCompatibility": 78,
+      "profile": {
+        "artistic": 90,
+        "social": 50,
+        "investigative": 50,
+        "enterprising": 55,
+        "conventional": 45
+      },
+      "projection": [
+        {
+          "period": "Año 1 - 2",
+          "role": "Asistente de Diseño",
+          "salary": "S/ 1800 - S/ 2800"
+        },
+        {
+          "period": "Año 3 - 5",
+          "role": "Diseñador de Interiores",
+          "salary": "S/ 3500 - S/ 5500"
+        },
+        {
+          "period": "Año 5 - 8",
+          "role": "Jefe de Proyectos",
+          "salary": "S/ 6500 - S/ 9000"
+        },
+        {
+          "period": "Año 8+",
+          "role": "Estudio Propio",
+          "salary": "S/ 10000+"
+        }
+      ],
+      "recommendations": [
+        "Domina AutoCAD, SketchUp y renderizado durante los primeros años.",
+        "Construye un portafolio con proyectos reales de remodelación.",
+        "Especialízate en diseño sostenible y bioclimático."
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Diseño Industrial",
+      "emoji": "\ud83d\udda5\ufe0f",
+      "area": "Diseño y Arte",
+      "imageUrl": "/images/careers/industrial-design.jpg",
+      "shortDescription": "Desarrollar productos pensados para ser fabricados en serie por métodos industriales.",
+      "description": "Integra creatividad, ingeniería y negocio para diseñar productos útiles, fabricables y sostenibles.",
+      "durationYears": 5,
+      "durationLabel": "5 años (10 Semestres)",
+      "semesters": 10,
+      "modality": "Presencial",
+      "modalityDetail": "Presencial / Taller",
+      "universities": [
+        {
+          "name": "Pontificia Universidad Católica del Perú",
+          "acronym": "PUCP",
+          "studyPlanUrl": "https://www.pucp.edu.pe/"
+        },
+        {
+          "name": "Universidad Peruana de Ciencias Aplicadas",
+          "acronym": "UPC",
+          "studyPlanUrl": "https://www.upc.edu.pe/"
+        },
+        {
+          "name": "Universidad de Ingeniería y Tecnología",
+          "acronym": "UTEC",
+          "studyPlanUrl": "https://www.utec.edu.pe/"
+        },
+        {
+          "name": "SENATI",
+          "acronym": "SENATI",
+          "studyPlanUrl": "https://www.senati.edu.pe/"
+        }
+      ],
+      "fieldOfWork": [
+        "Industria manufacturera",
+        "Diseño de productos",
+        "Innovación y prototipado"
+      ],
+      "mainField": "Industria, Productos Tech",
+      "skills": [
+        "Pensamiento creativo",
+        "Modelado 3D y prototipado",
+        "Conocimiento de materiales",
+        "Resolución de problemas"
+      ],
+      "averageSalary": {
+        "min": 1300,
+        "max": 3500
+      },
+      "salaryRange": {
+        "min": 1800,
+        "max": 5500
+      },
+      "employabilityRate": 88,
+      "demandLevel": "Media",
+      "baseCompatibility": 76,
+      "profile": {
+        "artistic": 80,
+        "social": 40,
+        "investigative": 70,
+        "enterprising": 55,
+        "conventional": 45
+      },
+      "projection": [
+        {
+          "period": "Año 1 - 2",
+          "role": "Diseñador de Producto Junior",
+          "salary": "S/ 2000 - S/ 3000"
+        },
+        {
+          "period": "Año 3 - 5",
+          "role": "Diseñador de Producto",
+          "salary": "S/ 4000 - S/ 6000"
+        },
+        {
+          "period": "Año 5 - 8",
+          "role": "Líder de Innovación",
+          "salary": "S/ 7000 - S/ 9500"
+        },
+        {
+          "period": "Año 8+",
+          "role": "Director de Diseño",
+          "salary": "S/ 11000+"
+        }
+      ],
+      "recommendations": [
+        "Aprende SolidWorks o Fusion 360 y técnicas de prototipado rápido.",
+        "Participa en concursos de diseño e innovación.",
+        "Complementa con cursos de gestión de la producción."
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Periodismo y Medios Digitales",
+      "emoji": "\ud83c\udf99\ufe0f",
+      "area": "Comunicaciones",
+      "imageUrl": "/images/careers/journalism.svg",
+      "shortDescription": "Investigación, redacción y producción de contenidos en medios digitales.",
+      "description": "Forma comunicadores capaces de investigar, contar historias y producir contenido para medios digitales y tradicionales.",
+      "durationYears": 5,
+      "durationLabel": "5 años (Licenciatura)",
+      "semesters": 10,
+      "modality": "Presencial",
+      "modalityDetail": "Presencial / Remoto",
+      "universities": [
+        {
+          "name": "Universidad de Lima",
+          "acronym": "ULima",
+          "studyPlanUrl": "https://www.ulima.edu.pe/"
+        },
+        {
+          "name": "Pontificia Universidad Católica del Perú",
+          "acronym": "PUCP",
+          "studyPlanUrl": "https://www.pucp.edu.pe/"
+        },
+        {
+          "name": "Universidad Peruana de Ciencias Aplicadas",
+          "acronym": "UPC",
+          "studyPlanUrl": "https://www.upc.edu.pe/"
+        }
+      ],
+      "fieldOfWork": [
+        "Medios digitales y prensa",
+        "Agencias de contenido",
+        "Comunicación corporativa"
+      ],
+      "mainField": "Medios, Contenido Digital",
+      "skills": [
+        "Redacción",
+        "Pensamiento crítico",
+        "Producción audiovisual",
+        "Investigación"
+      ],
+      "averageSalary": {
+        "min": 1025,
+        "max": 3000
+      },
+      "salaryRange": {
+        "min": 1200,
+        "max": 4000
+      },
+      "employabilityRate": 74,
+      "demandLevel": "Media",
+      "baseCompatibility": 74,
+      "profile": {
+        "artistic": 75,
+        "social": 75,
+        "investigative": 60,
+        "enterprising": 60,
+        "conventional": 35
+      },
+      "projection": [
+        {
+          "period": "Año 1 - 2",
+          "role": "Redactor Digital",
+          "salary": "S/ 1500 - S/ 2500"
+        },
+        {
+          "period": "Año 3 - 5",
+          "role": "Productor de Contenidos",
+          "salary": "S/ 3000 - S/ 4500"
+        },
+        {
+          "period": "Año 5 - 8",
+          "role": "Editor / Jefe de Medios",
+          "salary": "S/ 5000 - S/ 8000"
+        },
+        {
+          "period": "Año 8+",
+          "role": "Director de Comunicaciones",
+          "salary": "S/ 9000+"
+        }
+      ],
+      "recommendations": [
+        "Crea un blog o pódcast propio para construir portafolio.",
+        "Aprende edición de video y analítica de audiencias.",
+        "Haz prácticas en una redacción digital desde el tercer año."
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Psicología",
+      "emoji": "\ud83e\udde0",
+      "area": "Ciencias Sociales",
+      "imageUrl": "/images/careers/psychology.svg",
+      "shortDescription": "Estudio del comportamiento humano y los procesos mentales.",
+      "description": "Estudia el comportamiento humano, los procesos cognitivos y el desarrollo emocional para intervenir en salud, educación y organizaciones.",
+      "durationYears": 6,
+      "durationLabel": "6 años (Licenciatura)",
+      "semesters": 12,
+      "modality": "Presencial",
+      "modalityDetail": "Presencial",
+      "universities": [
+        {
+          "name": "Pontificia Universidad Católica del Perú",
+          "acronym": "PUCP",
+          "studyPlanUrl": "https://www.pucp.edu.pe/"
+        },
+        {
+          "name": "Universidad Peruana Cayetano Heredia",
+          "acronym": "UPCH",
+          "studyPlanUrl": "https://www.cayetano.edu.pe/"
+        },
+        {
+          "name": "Universidad Peruana de Ciencias Aplicadas",
+          "acronym": "UPC",
+          "studyPlanUrl": "https://www.upc.edu.pe/"
+        }
+      ],
+      "fieldOfWork": [
+        "Psicología clínica",
+        "Instituciones educativas",
+        "Recursos humanos"
+      ],
+      "mainField": "Clínica, Educación, RR.HH.",
+      "skills": [
+        "Empatía",
+        "Escucha activa",
+        "Análisis del comportamiento",
+        "Ética profesional"
+      ],
+      "averageSalary": {
+        "min": 1200,
+        "max": 3500
+      },
+      "salaryRange": {
+        "min": 1500,
+        "max": 5000
+      },
+      "employabilityRate": 80,
+      "demandLevel": "Alta",
+      "baseCompatibility": 72,
+      "profile": {
+        "artistic": 50,
+        "social": 95,
+        "investigative": 70,
+        "enterprising": 45,
+        "conventional": 40
+      },
+      "projection": [
+        {
+          "period": "Año 1 - 2",
+          "role": "Psicólogo Asistente",
+          "salary": "S/ 1800 - S/ 2600"
+        },
+        {
+          "period": "Año 3 - 5",
+          "role": "Psicólogo Clínico / Organizacional",
+          "salary": "S/ 3000 - S/ 5000"
+        },
+        {
+          "period": "Año 5 - 8",
+          "role": "Especialista",
+          "salary": "S/ 5500 - S/ 8000"
+        },
+        {
+          "period": "Año 8+",
+          "role": "Consultorio Propio",
+          "salary": "S/ 9000+"
+        }
+      ],
+      "recommendations": [
+        "Realiza voluntariados en centros de salud mental.",
+        "Elige una especialidad desde el cuarto año.",
+        "Planifica una maestría para potenciar tu desarrollo."
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Ingeniería de Software",
+      "emoji": "\ud83d\udcbb",
+      "area": "Tecnología",
+      "imageUrl": "/images/careers/software.svg",
+      "shortDescription": "Diseño, desarrollo y mantenimiento de soluciones de software.",
+      "description": "Forma ingenieros capaces de diseñar, construir y mantener sistemas de software de calidad para problemas reales.",
+      "durationYears": 5,
+      "durationLabel": "5 años (10 Semestres)",
+      "semesters": 10,
+      "modality": "Presencial",
+      "modalityDetail": "Presencial / Híbrido",
+      "universities": [
+        {
+          "name": "Universidad Peruana de Ciencias Aplicadas",
+          "acronym": "UPC",
+          "studyPlanUrl": "https://www.upc.edu.pe/"
+        },
+        {
+          "name": "Universidad de Ingeniería y Tecnología",
+          "acronym": "UTEC",
+          "studyPlanUrl": "https://www.utec.edu.pe/"
+        },
+        {
+          "name": "Pontificia Universidad Católica del Perú",
+          "acronym": "PUCP",
+          "studyPlanUrl": "https://www.pucp.edu.pe/"
+        }
+      ],
+      "fieldOfWork": [
+        "Empresas de tecnología",
+        "Banca y fintech",
+        "Emprendimientos digitales"
+      ],
+      "mainField": "Desarrollo, Cloud, IA",
+      "skills": [
+        "Pensamiento lógico",
+        "Programación",
+        "Trabajo en equipo",
+        "Aprendizaje continuo"
+      ],
+      "averageSalary": {
+        "min": 2500,
+        "max": 6000
+      },
+      "salaryRange": {
+        "min": 3000,
+        "max": 9000
+      },
+      "employabilityRate": 94,
+      "demandLevel": "Alta",
+      "baseCompatibility": 70,
+      "profile": {
+        "artistic": 45,
+        "social": 40,
+        "investigative": 95,
+        "enterprising": 55,
+        "conventional": 65
+      },
+      "projection": [
+        {
+          "period": "Año 1 - 2",
+          "role": "Desarrollador Junior",
+          "salary": "S/ 3000 - S/ 4500"
+        },
+        {
+          "period": "Año 3 - 5",
+          "role": "Desarrollador Senior",
+          "salary": "S/ 6000 - S/ 9000"
+        },
+        {
+          "period": "Año 5 - 8",
+          "role": "Arquitecto de Software",
+          "salary": "S/ 10000 - S/ 14000"
+        },
+        {
+          "period": "Año 8+",
+          "role": "CTO / Consultor",
+          "salary": "S/ 15000+"
+        }
+      ],
+      "recommendations": [
+        "Practica algoritmos y estructuras de datos desde el primer año.",
+        "Contribuye a proyectos open source.",
+        "Obtén certificaciones en la nube."
+      ]
+    }
+  ],
+  "favorites": [
+    {
+      "id": "1",
+      "studentId": "std-101",
+      "careerId": "1"
+    },
+    {
+      "id": "2",
+      "studentId": "std-101",
+      "careerId": "2"
+    },
+    {
+      "id": "3",
+      "studentId": "std-101",
+      "careerId": "3"
+    },
+    {
+      "id": "4",
+      "studentId": "std-102",
+      "careerId": "5"
+    },
+    {
+      "id": "5",
+      "studentId": "std-102",
+      "careerId": "4"
+    },
+    {
+      "id": "6",
+      "studentId": "std-102",
+      "careerId": "1"
+    },
+    {
+      "id": "7",
+      "studentId": "std-103",
+      "careerId": "6"
+    },
+    {
+      "id": "8",
+      "studentId": "std-104",
+      "careerId": "4"
+    },
+    {
+      "id": "9",
+      "studentId": "std-104",
+      "careerId": "2"
+    },
+    {
+      "id": "10",
+      "studentId": "std-105",
+      "careerId": "6"
+    },
+    {
+      "id": "11",
+      "studentId": "std-105",
+      "careerId": "3"
+    },
+    {
+      "id": "12",
+      "studentId": "std-105",
+      "careerId": "1"
+    },
+    {
+      "id": "13",
+      "studentId": "std-106",
+      "careerId": "5"
+    },
+    {
+      "id": "14",
+      "studentId": "std-106",
+      "careerId": "4"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "studentId": "std-101",
+      "title": "Probar Simulador de Futuro de Diseño gráfico",
+      "status": "completed",
+      "dueDate": null,
+      "order": 1
+    },
+    {
+      "id": "2",
+      "studentId": "std-101",
+      "title": "Asistir a Sesión de Orientación con Silvia",
+      "status": "pending",
+      "dueDate": "2026-09-21",
+      "order": 2
+    },
+    {
+      "id": "3",
+      "studentId": "std-101",
+      "title": "Registrar carreras en favoritos",
+      "status": "completed",
+      "dueDate": null,
+      "order": 3
+    },
+    {
+      "id": "4",
+      "studentId": "std-101",
+      "title": "Revisar Malla de Diseño Gráfico",
+      "status": "pending",
+      "dueDate": "2026-10-20",
+      "order": 4
+    },
+    {
+      "id": "5",
+      "studentId": "std-102",
+      "title": "Comparar mallas de Psicología",
+      "status": "completed",
+      "dueDate": null,
+      "order": 1
+    },
+    {
+      "id": "6",
+      "studentId": "std-102",
+      "title": "Asistir a sesión grupal",
+      "status": "completed",
+      "dueDate": null,
+      "order": 2
+    },
+    {
+      "id": "7",
+      "studentId": "std-102",
+      "title": "Registrar carreras en favoritos",
+      "status": "completed",
+      "dueDate": null,
+      "order": 3
+    },
+    {
+      "id": "8",
+      "studentId": "std-103",
+      "title": "Completar el Test NextPath (IA)",
+      "status": "pending",
+      "dueDate": null,
+      "order": 1
+    },
+    {
+      "id": "9",
+      "studentId": "std-103",
+      "title": "Registrar carreras en favoritos",
+      "status": "completed",
+      "dueDate": null,
+      "order": 2
+    },
+    {
+      "id": "10",
+      "studentId": "std-103",
+      "title": "Asistir a sesión de orientación",
+      "status": "pending",
+      "dueDate": null,
+      "order": 3
+    },
+    {
+      "id": "11",
+      "studentId": "std-104",
+      "title": "Repetir el Test de Holland",
+      "status": "pending",
+      "dueDate": null,
+      "order": 1
+    },
+    {
+      "id": "12",
+      "studentId": "std-104",
+      "title": "Registrar carreras en favoritos",
+      "status": "completed",
+      "dueDate": null,
+      "order": 2
+    },
+    {
+      "id": "13",
+      "studentId": "std-104",
+      "title": "Revisar resultados con el psicólogo",
+      "status": "pending",
+      "dueDate": null,
+      "order": 3
+    },
+    {
+      "id": "14",
+      "studentId": "std-105",
+      "title": "Probar simulador de Ingeniería de Software",
+      "status": "completed",
+      "dueDate": null,
+      "order": 1
+    },
+    {
+      "id": "15",
+      "studentId": "std-105",
+      "title": "Registrar carreras en favoritos",
+      "status": "completed",
+      "dueDate": null,
+      "order": 2
+    },
+    {
+      "id": "16",
+      "studentId": "std-105",
+      "title": "Revisar malla de Diseño Industrial",
+      "status": "pending",
+      "dueDate": null,
+      "order": 3
+    },
+    {
+      "id": "17",
+      "studentId": "std-106",
+      "title": "Revisar malla de Psicología",
+      "status": "completed",
+      "dueDate": null,
+      "order": 1
+    },
+    {
+      "id": "18",
+      "studentId": "std-106",
+      "title": "Registrar carreras en favoritos",
+      "status": "completed",
+      "dueDate": null,
+      "order": 2
+    },
+    {
+      "id": "19",
+      "studentId": "std-106",
+      "title": "Completar el Test de Holland",
+      "status": "pending",
+      "dueDate": null,
+      "order": 3
+    }
+  ],
+  "counseling-sessions": [
+    {
+      "id": "1",
+      "title": "Sesión Individual - Joaquín Silva",
+      "type": "INDIVIDUAL",
+      "target": "Joaquín Silva",
+      "psychologistId": "psy-201",
+      "psychologistName": "Ernesto Silva",
+      "studentId": "std-101",
+      "groupId": null,
+      "studentIds": [
+        "std-101"
+      ],
+      "date": "15/10/2026",
+      "time": "11:00 AM",
+      "attendeesCount": 1,
+      "status": "SCHEDULED",
+      "notes": "Objetivo de la reunión: Evaluar opciones de universidades (UPC, PUCP) y resolver dudas sobre el campo laboral e inserción profesional.",
+      "meetLink": "https://meet.google.com/abc-defg-hij"
+    },
+    {
+      "id": "2",
+      "title": "Sesión Individual - Joaquín Silva",
+      "type": "INDIVIDUAL",
+      "target": "Joaquín Silva",
+      "psychologistId": "psy-203",
+      "psychologistName": "Diego Torres",
+      "studentId": "std-101",
+      "groupId": null,
+      "studentIds": [
+        "std-101"
+      ],
+      "date": "22/10/2026",
+      "time": "8:00 AM",
+      "attendeesCount": 1,
+      "status": "SCHEDULED",
+      "notes": "Objetivo de la reunión: Revisar los resultados del Test de Holland y definir la segunda opción de carrera.",
+      "meetLink": "https://meet.google.com/xyz-uvwx-rst"
+    },
+    {
+      "id": "3",
+      "title": "Sesión Individual - Joaquín Silva",
+      "type": "INDIVIDUAL",
+      "target": "Joaquín Silva",
+      "psychologistId": "psy-202",
+      "psychologistName": "Silvia Ramos",
+      "studentId": "std-101",
+      "groupId": null,
+      "studentIds": [
+        "std-101"
+      ],
+      "date": "05/11/2026",
+      "time": "10:00 AM",
+      "attendeesCount": 1,
+      "status": "SCHEDULED",
+      "notes": "Objetivo de la reunión: Construir el plan de acción para la postulación universitaria.",
+      "meetLink": "https://meet.google.com/lmn-opqr-stu"
+    },
+    {
+      "id": "4",
+      "title": "Sesión Grupal #1 - Orientación Creativa",
+      "type": "GROUP",
+      "target": "Grupo A",
+      "psychologistId": "psy-201",
+      "psychologistName": "Ernesto Silva",
+      "studentId": null,
+      "groupId": "A",
+      "studentIds": [
+        "std-101",
+        "std-102",
+        "std-105"
+      ],
+      "date": "13/10/2026",
+      "time": "11:00 AM",
+      "attendeesCount": 3,
+      "status": "SCHEDULED",
+      "notes": "Objetivo de la reunión: Profundizar en la autoevaluación de habilidades y resolver dudas sobre la carrera de Diseño Gráfico y su proyección laboral.",
+      "meetLink": "https://meet.google.com/grp-defg-hij"
+    },
+    {
+      "id": "5",
+      "title": "Sesión Individual - Valeria Mendoza",
+      "type": "INDIVIDUAL",
+      "target": "Valeria Mendoza",
+      "psychologistId": "psy-201",
+      "psychologistName": "Ernesto Silva",
+      "studentId": "std-104",
+      "groupId": null,
+      "studentIds": [
+        "std-104"
+      ],
+      "date": "10/10/2026",
+      "time": "4:00 PM",
+      "attendeesCount": 1,
+      "status": "SCHEDULED",
+      "notes": "Objetivo de la reunión: Revisar las respuestas inconsistentes del Test de Kuder y repetir la evaluación.",
+      "meetLink": "https://meet.google.com/val-ment-kdr"
+    },
+    {
+      "id": "6",
+      "title": "Sesión Grupal #2 - Orientación Ingeniería",
+      "type": "GROUP",
+      "target": "Grupo B",
+      "psychologistId": "psy-201",
+      "psychologistName": "Ernesto Silva",
+      "studentId": null,
+      "groupId": "B",
+      "studentIds": [
+        "std-103",
+        "std-104",
+        "std-106"
+      ],
+      "date": "05/11/2026",
+      "time": "10:00 AM",
+      "attendeesCount": 3,
+      "status": "SCHEDULED",
+      "notes": "Objetivo de la reunión: Presentar las carreras de ingeniería y ciencias con mayor demanda laboral.",
+      "meetLink": "https://meet.google.com/ing-grpb-xyz"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "1",
+      "studentId": "std-101",
+      "studentName": "Joaquín Silva",
+      "studentAvatarUrl": "/images/avatars/student.svg",
+      "psychologistId": "psy-201",
+      "psychologistName": "Ernesto Silva",
+      "avatarUrl": "/images/avatars/psychologist.svg"
+    },
+    {
+      "id": "2",
+      "studentId": "std-101",
+      "studentName": "Joaquín Silva",
+      "studentAvatarUrl": "/images/avatars/student.svg",
+      "psychologistId": "psy-202",
+      "psychologistName": "Silvia Ramos",
+      "avatarUrl": "/images/avatars/psychologist.svg"
+    },
+    {
+      "id": "3",
+      "studentId": "std-101",
+      "studentName": "Joaquín Silva",
+      "studentAvatarUrl": "/images/avatars/student.svg",
+      "psychologistId": "psy-203",
+      "psychologistName": "Diego Torres",
+      "avatarUrl": "/images/avatars/psychologist.svg"
+    },
+    {
+      "id": "4",
+      "studentId": "std-102",
+      "studentName": "Camila Torres",
+      "studentAvatarUrl": "/images/avatars/student.svg",
+      "psychologistId": "psy-201",
+      "psychologistName": "Ernesto Silva",
+      "avatarUrl": "/images/avatars/psychologist.svg"
+    },
+    {
+      "id": "5",
+      "studentId": "std-103",
+      "studentName": "Sebastián Rivas",
+      "studentAvatarUrl": "/images/avatars/student.svg",
+      "psychologistId": "psy-201",
+      "psychologistName": "Ernesto Silva",
+      "avatarUrl": "/images/avatars/psychologist.svg"
+    },
+    {
+      "id": "6",
+      "studentId": "std-104",
+      "studentName": "Valeria Mendoza",
+      "studentAvatarUrl": "/images/avatars/student.svg",
+      "psychologistId": "psy-201",
+      "psychologistName": "Ernesto Silva",
+      "avatarUrl": "/images/avatars/psychologist.svg"
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "conversationId": "1",
+      "senderRole": "student",
+      "text": "Buenas tardes, ya terminé de rendir los test vocacionales que me indicó.",
+      "sentAt": "2026-10-07T16:00:00",
+      "read": true
+    },
+    {
+      "id": "2",
+      "conversationId": "1",
+      "senderRole": "psychologist",
+      "text": "Okei estimado, ahora reviso los resultados de su test.",
+      "sentAt": "2026-10-07T16:05:00",
+      "read": true
+    },
+    {
+      "id": "3",
+      "conversationId": "1",
+      "senderRole": "student",
+      "text": "Gracias.",
+      "sentAt": "2026-10-07T16:06:00",
+      "read": true
+    },
+    {
+      "id": "4",
+      "conversationId": "1",
+      "senderRole": "psychologist",
+      "text": "Estoy para ayudarte.",
+      "sentAt": "2026-10-07T16:07:00",
+      "read": true
+    },
+    {
+      "id": "5",
+      "conversationId": "1",
+      "senderRole": "psychologist",
+      "text": "Te recomiendo seguir explorando tus intereses creativos y sociales para identificar qué actividades te motivan más.",
+      "sentAt": "2026-10-07T17:30:00",
+      "read": true
+    },
+    {
+      "id": "6",
+      "conversationId": "1",
+      "senderRole": "psychologist",
+      "text": "Te comparto este recurso:",
+      "sentAt": "2026-10-07T17:31:00",
+      "read": true,
+      "attachment": {
+        "resourceId": "1",
+        "title": "Orientación vocacional y profesional",
+        "coverUrl": "/images/resources/vocational-guide.svg",
+        "fileUrl": "/resources/orientacion-vocacional-y-profesional.pdf"
+      }
+    },
+    {
+      "id": "7",
+      "conversationId": "1",
+      "senderRole": "psychologist",
+      "text": "Te recomiendo leer la primera parte del capítulo 2.",
+      "sentAt": "2026-10-07T17:32:00",
+      "read": true
+    },
+    {
+      "id": "8",
+      "conversationId": "1",
+      "senderRole": "psychologist",
+      "text": "Hola Joaquín, más arriba te envié las recomendaciones en base a tu test vocacional que rendiste.",
+      "sentAt": "2026-10-08T09:12:00",
+      "read": true
+    },
+    {
+      "id": "9",
+      "conversationId": "1",
+      "senderRole": "student",
+      "text": "Buenas tardes tutor, muchas gracias por las recomendaciones.",
+      "sentAt": "2026-10-08T14:02:00",
+      "read": true
+    },
+    {
+      "id": "10",
+      "conversationId": "1",
+      "senderRole": "psychologist",
+      "text": "Ten buen día.",
+      "sentAt": "2026-10-08T14:05:00",
+      "read": true
+    },
+    {
+      "id": "11",
+      "conversationId": "1",
+      "senderRole": "student",
+      "text": "Gracias, usted también",
+      "sentAt": "2026-10-08T14:06:00",
+      "read": true
+    },
+    {
+      "id": "12",
+      "conversationId": "1",
+      "senderRole": "psychologist",
+      "text": "Joaquín, conéctate a la sesión de hoy.",
+      "sentAt": "2026-10-08T15:55:00",
+      "read": true
+    },
+    {
+      "id": "13",
+      "conversationId": "1",
+      "senderRole": "student",
+      "text": "Sí profesor, ahorita me estoy conectando, disculpe.",
+      "sentAt": "2026-10-08T15:57:00",
+      "read": true
+    },
+    {
+      "id": "14",
+      "conversationId": "2",
+      "senderRole": "psychologist",
+      "text": "Hola Joaquín, recuerda completar el Test de Aptitudes antes de nuestra sesión.",
+      "sentAt": "2026-10-06T16:20:00",
+      "read": true
+    },
+    {
+      "id": "15",
+      "conversationId": "2",
+      "senderRole": "student",
+      "text": "¡Claro! Lo termino esta semana.",
+      "sentAt": "2026-10-06T16:45:00",
+      "read": true
+    },
+    {
+      "id": "16",
+      "conversationId": "3",
+      "senderRole": "psychologist",
+      "text": "Hola Joaquín, revisé tu comparativa de carreras de diseño. Conversemos el 22/10.",
+      "sentAt": "2026-10-05T11:00:00",
+      "read": true
+    },
+    {
+      "id": "17",
+      "conversationId": "4",
+      "senderRole": "student",
+      "text": "Profesor, ya terminé el test 16Personalities.",
+      "sentAt": "2026-09-28T18:10:00",
+      "read": true
+    },
+    {
+      "id": "18",
+      "conversationId": "4",
+      "senderRole": "psychologist",
+      "text": "¡Excelente, Camila! Tu perfil social está muy bien definido.",
+      "sentAt": "2026-09-28T19:00:00",
+      "read": true
+    },
+    {
+      "id": "19",
+      "conversationId": "5",
+      "senderRole": "psychologist",
+      "text": "Hola Sebastián, ¿todo bien? Aún no inicias el Test NextPath (IA).",
+      "sentAt": "2026-10-03T10:00:00",
+      "read": true
+    },
+    {
+      "id": "20",
+      "conversationId": "6",
+      "senderRole": "psychologist",
+      "text": "Valeria, te agendé una sesión para revisar tu Test de Kuder.",
+      "sentAt": "2026-10-06T12:30:00",
+      "read": true
+    },
+    {
+      "id": "21",
+      "conversationId": "6",
+      "senderRole": "student",
+      "text": "Gracias, ahí estaré.",
+      "sentAt": "2026-10-06T13:15:00",
+      "read": true
+    }
+  ],
+  "communities": [
+    {
+      "id": "1",
+      "name": "Futuros Diseñadores UX",
+      "memberIds": [
+        "std-101",
+        "std-102"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Comunicación & Periodismo",
+      "memberIds": [
+        "std-101",
+        "std-104"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Tecnología",
+      "memberIds": [
+        "std-101",
+        "std-105"
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "id": "1",
+      "communityId": "1",
+      "authorName": "Camila R.",
+      "content": "¿Alguien que haya probado la simulación para Diseño Gráfico?",
+      "commentsCount": 8,
+      "createdAt": "2026-10-07T18:20:00"
+    },
+    {
+      "id": "2",
+      "communityId": "3",
+      "authorName": "Sebastián G.",
+      "content": "Les comparto este recurso de preparación para los test vocacionales.",
+      "commentsCount": 12,
+      "createdAt": "2026-10-06T12:00:00"
+    },
+    {
+      "id": "3",
+      "communityId": "2",
+      "authorName": "Lucía M.",
+      "content": "Ayer tuve mi primera sesión de orientación con el psicólogo Diego. Me ayudó muchísimo a aclarar mi segunda opción de carrera.",
+      "commentsCount": 8,
+      "createdAt": "2026-10-05T09:30:00"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "threadId": "1",
+      "authorName": "Valeria P.",
+      "content": "¡Sí! Te muestra la línea de tiempo y los salarios estimados, súper útil.",
+      "createdAt": "2026-10-07T19:00:00"
+    },
+    {
+      "id": "2",
+      "threadId": "1",
+      "authorName": "Mateo L.",
+      "content": "Yo la usé y me ayudó a decidir entre Diseño Gráfico e Interiores.",
+      "createdAt": "2026-10-07T20:10:00"
+    },
+    {
+      "id": "3",
+      "threadId": "2",
+      "authorName": "Andrea C.",
+      "content": "¡Gracias por compartir!",
+      "createdAt": "2026-10-06T13:00:00"
+    },
+    {
+      "id": "4",
+      "threadId": "3",
+      "authorName": "Camila R.",
+      "content": "Qué bueno, yo tengo mi sesión con él la próxima semana.",
+      "createdAt": "2026-10-05T10:15:00"
+    }
+  ],
+  "student-groups": [
+    {
+      "id": "A",
+      "name": "Grupo A",
+      "psychologistId": "psy-201",
+      "description": "Diseño, Arte y Comunicación"
+    },
+    {
+      "id": "B",
+      "name": "Grupo B",
+      "psychologistId": "psy-201",
+      "description": "Ciencias, Ingeniería y Social"
+    }
+  ],
+  "student-profiles": [
+    {
+      "id": "1",
+      "studentId": "std-101",
+      "psychologistId": "psy-201",
+      "groupId": "A",
+      "flags": [],
+      "observation": "Indecisión en carreras",
+      "lastActivityDate": "2026-10-08"
+    },
+    {
+      "id": "2",
+      "studentId": "std-102",
+      "psychologistId": "psy-201",
+      "groupId": "A",
+      "flags": [],
+      "observation": "Perfil definido",
+      "lastActivityDate": "2026-10-07"
+    },
+    {
+      "id": "3",
+      "studentId": "std-103",
+      "psychologistId": "psy-201",
+      "groupId": "B",
+      "flags": [
+        "inactivity",
+        "lowParticipation"
+      ],
+      "observation": "",
+      "lastActivityDate": "2026-09-24"
+    },
+    {
+      "id": "4",
+      "studentId": "std-104",
+      "psychologistId": "psy-201",
+      "groupId": "B",
+      "flags": [
+        "inconsistent",
+        "lowParticipation"
+      ],
+      "observation": "Respuestas inconsistentes",
+      "lastActivityDate": "2026-10-05"
+    },
+    {
+      "id": "5",
+      "studentId": "std-105",
+      "psychologistId": "psy-201",
+      "groupId": "A",
+      "flags": [],
+      "observation": "Avance constante",
+      "lastActivityDate": "2026-10-06"
+    },
+    {
+      "id": "6",
+      "studentId": "std-106",
+      "psychologistId": "psy-201",
+      "groupId": "B",
+      "flags": [],
+      "observation": "Interés en carreras sociales",
+      "lastActivityDate": "2026-10-02"
+    }
+  ],
+  "resources": [
+    {
+      "id": "1",
+      "title": "Orientación vocacional y profesional",
+      "category": "Guía",
+      "description": "Guía práctica para acompañar al estudiante en el autoconocimiento y la elección de carrera.",
+      "coverUrl": "/images/resources/vocational-guide.svg",
+      "fileUrl": "/resources/orientacion-vocacional-y-profesional.pdf",
+      "updatedAt": "2025-09-25",
+      "psychologistId": "psy-201"
+    },
+    {
+      "id": "2",
+      "title": "Diseña tu vida",
+      "category": "Lectura recomendada",
+      "description": "Ficha de lectura con actividades de diseño de vida aplicadas a la orientación vocacional.",
+      "coverUrl": "/images/resources/design-your-life.svg",
+      "fileUrl": "/resources/ficha-disena-tu-vida.pdf",
+      "updatedAt": "2024-11-30",
+      "psychologistId": "psy-201"
+    },
+    {
+      "id": "3",
+      "title": "El caballero de la armadura oxidada",
+      "category": "Lectura recomendada",
+      "description": "Ficha de lectura con preguntas de reflexión sobre autoconocimiento.",
+      "coverUrl": "/images/resources/rusty-armour.svg",
+      "fileUrl": "/resources/ficha-caballero-armadura-oxidada.pdf",
+      "updatedAt": "2025-04-24",
+      "psychologistId": "psy-201"
+    }
+  ]
+}
