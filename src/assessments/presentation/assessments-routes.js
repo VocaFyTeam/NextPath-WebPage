@@ -1,4 +1,4 @@
-import VocationalTestList from "./view/vocational-test-list.vue";
+const VocationalTestList = () => import ("./view/vocational-test-list.vue");
 const VocationalTest = () => import('./view/vocational-test.vue');
 const VocationalResults = () => import('./view/vocational-results.vue');
 

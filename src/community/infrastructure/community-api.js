@@ -1,5 +1,5 @@
-import { BaseApi } from '../../../../../nextpath-frontend-estudiante/nextpath/src/shared/infrastructure/base-api.js';
 import {BaseEndpoint} from "../../shared/infrastructure/base-endpoint.js";
+import {BaseApi} from "../../shared/infrastructure/base-api.js";
 
 const communitiesEndpointPath = import.meta.env.VITE_COMMUNITIES_ENDPOINT_PATH;
 const threadsEndpointPath = import.meta.env.VITE_THREADS_ENDPOINT_PATH;
