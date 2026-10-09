@@ -1,0 +1,379 @@
+
+:root {
+  --np-primary: #0a7f7a;
+  --np-primary-hover: #086b67;
+  --np-primary-dark: #0d4b40;
+  --np-primary-dark-hover: #093a31;
+  --np-primary-soft: #e6f4f3;
+  --np-primary-muted: #5fb3ae;
+
+  --np-ink: #1d1d1f;
+  --np-text: #333333;
+  --np-muted: #6b6b6b;
+  --np-bg: #e7e7e7;
+  --np-surface: #ffffff;
+  --np-surface-alt: #f2f2f2;
+  --np-border: #d4d4d4;
+  --np-border-strong: #bdbdbd;
+  --np-bubble-student: #2f3e55;
+  --np-success: #0a7f7a;
+  --np-warning: #1d1d1f;
+  --np-danger: #c0392b;
+
+  --np-font-heading: 'Montserrat', 'Inter', Arial, sans-serif;
+  --np-font-body: 'Inter', Arial, sans-serif;
+
+  --np-radius-sm: 4px;
+  --np-radius: 8px;
+  --np-radius-lg: 14px;
+  --np-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  --np-shadow-lg: 0 6px 18px rgba(0, 0, 0, 0.14);
+
+  --np-sidebar-width: 190px;
+  --np-topbar-height: 82px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--np-font-body);
+  background: var(--np-bg);
+  color: var(--np-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--np-font-heading);
+  color: var(--np-ink);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* =========================
+   REUSABLE UI (np-*)
+========================= */
+
+.np-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.np-page-title {
+  margin: 0;
+  font-family: var(--np-font-heading);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: var(--np-primary);
+  text-transform: uppercase;
+}
+
+.np-page-title--normal {
+  text-transform: none;
+}
+
+.np-page-subtitle {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--np-text);
+}
+
+.np-section-title {
+  margin: 0;
+  font-family: var(--np-font-heading);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--np-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.np-card {
+  background: var(--np-surface);
+  border: 1px solid var(--np-border);
+  border-radius: var(--np-radius-sm);
+}
+
+.np-panel {
+  background: var(--np-surface);
+  border: 1px solid var(--np-border);
+  padding: 26px 30px;
+}
+
+.np-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 0 22px;
+  border: 1px solid transparent;
+  border-radius: var(--np-radius-sm);
+  background: var(--np-primary);
+  color: #fff;
+  font-family: var(--np-font-heading);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.np-btn:hover {
+  background: var(--np-primary-hover);
+}
+
+.np-btn:focus-visible {
+  outline: 3px solid var(--np-primary-muted);
+  outline-offset: 2px;
+}
+
+.np-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.np-btn--dark {
+  background: var(--np-primary-dark);
+  border-radius: var(--np-radius);
+}
+
+.np-btn--dark:hover {
+  background: var(--np-primary-dark-hover);
+}
+
+.np-btn--ghost {
+  background: transparent;
+  color: var(--np-primary);
+  border-color: var(--np-primary);
+}
+
+.np-btn--ghost:hover {
+  background: var(--np-primary-soft);
+}
+
+.np-btn--sm {
+  min-height: 30px;
+  padding: 0 14px;
+  font-size: 12px;
+}
+
+.np-btn--lg {
+  min-height: 46px;
+  padding: 0 32px;
+  font-size: 15px;
+}
+
+.np-link {
+  color: var(--np-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.np-link:hover {
+  text-decoration: underline;
+}
+
+.np-status {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.np-status--completed {
+  color: var(--np-success);
+}
+
+.np-status--pending {
+  color: var(--np-warning);
+}
+
+.np-empty {
+  padding: 32px;
+  text-align: center;
+  color: var(--np-muted);
+  font-size: 14px;
+}
+
+.np-empty i {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: var(--np-primary-muted);
+}
+
+.np-skeleton {
+  border-radius: var(--np-radius-sm);
+  background: linear-gradient(90deg, #ececec 25%, #f6f6f6 37%, #ececec 63%);
+  background-size: 400% 100%;
+  animation: np-shimmer 1.3s ease infinite;
+}
+
+@keyframes np-shimmer {
+  0% { background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
+}
+
+/* PrimeVue fine tuning so components match the mock-ups */
+.p-select,
+.p-inputtext,
+.p-textarea {
+  font-family: var(--np-font-body);
+}
+
+/* =========================
+   PRINT (Descargar reporte)
+========================= */
+
+@media print {
+  .np-no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+  }
+}
+
+/* =========================
+   PSYCHOLOGIST DASHBOARD (legacy, iam/presentation/views/dashboard.vue)
+========================= */
+
+.dashboard-page {
+  min-height: 100vh;
+  background: #f6f8fb;
+}
+
+.dashboard-header {
+  height: 72px;
+  padding: 0 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.dashboard-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dashboard-brand .brand-logo img{
+  width: 20%;
+  height: 20%;
+  margin: 0;
+
+  border-radius: 12px;
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 28px;
+}
+
+.welcome-section {
+  margin-bottom: 32px;
+}
+
+.dashboard-label {
+  color: var(--np-primary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.welcome-section h2 {
+  margin: 8px 0;
+  font-size: 34px;
+}
+
+.welcome-section p {
+  max-width: 650px;
+  margin: 0;
+
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dashboard-card {
+  min-height: 220px;
+}
+
+.dashboard-card i {
+  margin-right: 8px;
+  color: var(--np-primary);
+}
+
+.dashboard-card p {
+  min-height: 70px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header {
+    padding: 0 18px;
+  }
+
+  .dashboard-content {
+    padding: 32px 18px;
+  }
+
+  .welcome-section h2 {
+    font-size: 28px;
+  }
+}
+
