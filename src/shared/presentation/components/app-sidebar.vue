@@ -3,29 +3,26 @@ import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 import BrandLogo from './brand-logo.vue';
 
-defineProps({ open: { type: Boolean, default: false } });
+/**
+ * Side menu shared by the student and psychologist layouts.
+ * The items come from navigation-menus.js.
+ */
+const props = defineProps({
+  open: { type: Boolean, default: false },
+  /** @type {Array<{section: string, to: Object, icon: string, label: string}>} */
+  items: { type: Array, required: true }
+});
 const emit = defineEmits(['navigate']);
 
 const route = useRoute();
 
-/** Student menu (same order and icons as the mock-ups). */
-const items = [
-  { section: 'home', to: { name: 'student-home' }, icon: 'pi pi-home', label: 'nav.home' },
-  { section: 'favorites', to: { name: 'favorite-careers' }, icon: 'pi pi-heart', label: 'nav.favorites' },
-  { section: 'tests', to: { name: 'vocational-test-list' }, icon: 'pi pi-search', label: 'nav.tests' },
-  { section: 'careers', to: { name: 'career-list' }, icon: 'pi pi-book', label: 'nav.careers' },
-  { section: 'tasks', to: { name: 'task-board' }, icon: 'pi pi-id-card', label: 'nav.tasks' },
-  { section: 'sessions', to: { name: 'student-sessions' }, icon: 'pi pi-user-plus', label: 'nav.sessions' },
-  { section: 'messages', to: { name: 'student-messages' }, icon: 'pi pi-comment', label: 'nav.messages' },
-  { section: 'community', to: { name: 'community-forum' }, icon: 'pi pi-users', label: 'nav.community' }
-];
-
-const activeSection = computed(() => route.meta?.section ?? (route.name === 'student-home' ? 'home' : null));
+const activeSection = computed(() => route.meta?.section ?? null);
+const homeRoute = computed(() => props.items[0]?.to ?? '/');
 </script>
 
 <template>
   <aside class="sidebar" :class="{ 'sidebar--open': open }" :aria-label="$t('nav.mainMenu')">
-    <router-link :to="{ name: 'student-home' }" class="sidebar__brand" @click="emit('navigate')">
+    <router-link :to="homeRoute" class="sidebar__brand" @click="emit('navigate')">
       <brand-logo variant="stacked" />
     </router-link>
 

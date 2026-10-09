@@ -4,6 +4,7 @@ import { useRouter } from 'vue-router';
 import { useIamStore } from '../../../iam/application/iam.store.js';
 import LanguageSwitcher from './language-switcher.vue';
 
+defineProps({ showRole: { type: Boolean, default: false } });
 const emit = defineEmits(['toggle-menu']);
 
 const router = useRouter();
@@ -51,6 +52,7 @@ function signOut() {
       >
         <img :src="iamStore.currentUser?.avatarUrl" :alt="iamStore.currentUser?.fullName" />
       </button>
+      <span v-if="showRole && iamStore.currentUser" class="topbar__role">{{ $t(`auth.roles.${iamStore.currentUser?.role}`) }}</span>
 
       <transition name="fade">
         <div v-if="menuOpen" class="topbar__menu" role="menu">
@@ -98,6 +100,15 @@ function signOut() {
 
 .topbar__profile {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topbar__role {
+  margin-top: 2px;
+  font-size: 10.5px;
+  color: var(--np-ink);
 }
 
 .topbar__avatar {

@@ -1,9 +1,6 @@
 import { definePreset } from '@primeuix/themes';
 import Aura from '@primeuix/themes/aura';
 
-/**
- * PrimeVue preset with the NextPath teal brand palette (based on the logo color #0a7f7a).
- */
 const NextPathPreset = definePreset(Aura, {
     semantic: {
         primary: {

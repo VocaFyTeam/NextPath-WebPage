@@ -5,7 +5,6 @@ export class VocationalProgress {
     static FAVORITES_WEIGHT = 0.2;
     static FAVORITES_GOAL = 3;
 
-
     constructor({ completedTests = 0, totalTests = 0, completedTasks = 0, totalTasks = 0, favorites = 0 } = {}) {
         const ratio = (done, total) => (total > 0 ? Math.min(done / total, 1) : 0);
         const value =
